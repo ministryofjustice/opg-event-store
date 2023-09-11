@@ -7,7 +7,7 @@
     "uid": {
       "type": "string",
       "description": "The UID of the LPA",
-      "pattern": "M-([A-Z0-9]{4}){3}"
+      "pattern": "M(-[A-Z0-9]{4}){3}"
     },
     "requestType": {
       "type": "string",
@@ -20,7 +20,7 @@
       "items": {
         "type": "string"
       }
-    },
-    "required": ["uid", "requestType", "evidence"]
-  }
+    }
+  },
+  "required": ["uid", "requestType", "evidence"]
 }

@@ -7,14 +7,17 @@
     "dev": "eventcatalog dev",
     "build": "eventcatalog build",
     "generate": "eventcatalog generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/validate-examples.mjs"
   },
   "devDependencies": {
     "@eventcatalog/types": "0.4.2",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
     "autoprefixer": "10.4.5",
     "cross-env": "^7.0.3",
+    "glob": "^10.3.4",
     "postcss": "^8.3.11",
     "tailwindcss": "^3.3.3",
     "typescript": "^4.4.4"
