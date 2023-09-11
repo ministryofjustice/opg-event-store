@@ -7,12 +7,7 @@
     "uid": {
       "type": "string",
       "description": "The UID of the LPA",
-      "pattern": "M-([A-Z0-9]{4}){3}"
-    },
-    "source": {
-      "type": "string",
-      "description": "The source of the LPA application",
-      "enum": ["APPLICANT", "PHONE"]
+      "pattern": "M(-[A-Z0-9]{4}){3}"
     },
     "type": {
       "type": "string",
@@ -43,11 +38,11 @@
         "postcode": {
           "type": "string",
           "description": "The postcode of the donor's address",
-          "pattern": "[A-Z0-9 ]{,9}"
+          "pattern": "[A-Z0-9 ]{1,9}"
         }
       },
       "required": ["firstNames", "lastName", "dob", "postcode"]
-    },
-    "required": ["uid", "source", "type", "createdAt", "donor"]
-  }
+    }
+  },
+  "required": ["uid", "type", "createdAt", "donor"]
 }
