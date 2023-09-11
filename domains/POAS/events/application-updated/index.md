@@ -20,4 +20,6 @@ Sirius uses the event to keep a copy of the donor's identity, allowing OPG staff
 
 <NodeGraph title="Consumer / Producer Diagram" />
 
+<EventExamples />
+
 <Schema />
