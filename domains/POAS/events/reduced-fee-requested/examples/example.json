@@ -1,0 +1,8 @@
+{
+  "uid": "M-1234-5678-9012",
+  "requestType": "HalfFee",
+  "evidence": [
+    "/M-1234-5678-9012/uploads/payslip.pdf",
+    "/M-1234-5678-9012/uploads/application.doc"
+  ]
+}
