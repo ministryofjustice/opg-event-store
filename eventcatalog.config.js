@@ -1,3 +1,5 @@
+const publicPath = process.env.BASE_PATH ? `${process.env.BASE_PATH}/` : '';
+
 module.exports = {
   basePath: process.env.BASE_PATH ?? '',
   title: 'OPG Event Store',
@@ -29,13 +31,13 @@ module.exports = {
     {
       id: 'vega',
       name: 'Vega',
-      avatarUrl: '/vega.svg',
+      avatarUrl: `${publicPath}vega.svg`,
       role: 'Team',
     },
     {
       id: 'mrlpa',
       name: 'Make and Register an LPA',
-      avatarUrl: '/make-register.svg',
+      avatarUrl: `${publicPath}make-register.svg`,
       role: 'Team',
     },
   ],
