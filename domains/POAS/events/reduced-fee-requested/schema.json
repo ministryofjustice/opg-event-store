@@ -12,7 +12,7 @@
     "requestType": {
       "type": "string",
       "description": "The type of reduction being requested",
-      "enum": ["HalfFee", "NoFee"]
+      "enum": ["HalfFee", "NoFee", "HardshipFee", "FullFee"]
     },
     "evidence": {
       "type": "array",
