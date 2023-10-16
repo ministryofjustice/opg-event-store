@@ -35,13 +35,36 @@
           "description": "The date of birth of the donor",
           "format": "date"
         },
-        "postcode": {
-          "type": "string",
-          "description": "The postcode of the donor's address",
-          "pattern": "[A-Z0-9 ]{1,9}"
+        "address": {
+          "type": "object",
+          "description": "The donor's address",
+          "properties": {
+            "line1": {
+              "type": "string"
+            },
+            "line2": {
+              "type": "string"
+            },
+            "line3": {
+              "type": "string"
+            },
+            "town": {
+              "type": "string"
+            },
+            "postcode": {
+              "type": "string",
+              "pattern": "[A-Z0-9 ]{1,9}"
+            },
+            "country": {
+              "type": "string",
+              "description": "2-digit ISO 3166-1 country code per FCDO definitions: https://www.gov.uk/government/publications/geographical-names-and-information",
+              "pattern": "[A-Z]{2}"
+            }
+          },
+          "required": ["line1", "town", "country"]
         }
       },
-      "required": ["firstNames", "lastName", "dob", "postcode"]
+      "required": ["firstNames", "lastName", "dob"]
     }
   },
   "required": ["uid", "type", "createdAt", "donor"]
