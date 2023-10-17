@@ -64,7 +64,7 @@
           "required": ["line1", "town", "country"]
         }
       },
-      "required": ["firstNames", "lastName", "dob"]
+      "required": ["firstNames", "lastName", "dob", "address"]
     }
   },
   "required": ["uid", "type", "createdAt", "donor"]
