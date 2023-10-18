@@ -11,7 +11,7 @@
     },
     "fee": {
       "type": "integer",
-      "description": "The expected total to be paid as a result of the fee reduction"
+      "description": "The expected total to be paid in pence as a result of the fee reduction"
     }
   },
   "required": ["uid", "fee"]
