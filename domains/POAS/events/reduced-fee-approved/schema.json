@@ -1,0 +1,18 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.sirius/reduced-fee-approved.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.sirius/reduced-fee-approved",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "M(-[A-Z0-9]{4}){3}"
+    },
+    "outstandingFee": {
+      "type": "integer",
+      "description": "The amount left to pay in pence eg 4100 = £41.00"
+    }
+  },
+  "required": ["uid", "outstandingFee"]
+}
