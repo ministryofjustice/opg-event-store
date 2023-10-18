@@ -14,7 +14,7 @@ owners:
 
 ## Details
 
-Caseworkers will review a users request's to pay a reduced fee for their LPA. If users are found to be eligible, then a caseworker will apply a reduced fee to the case to 'approve' the request.
+Caseworkers will review users request's to pay a reduced fee for their LPA. If users are found to be eligible, then a caseworker will apply a reduced fee to the case to 'approve' the request.
 
 Sirius sends this event when a caseworker has applied a reduced fee to a case so that MRLPA can inform the user of the outcome, allowing them to pay the outstanding fee if there is one, and proceed with the next steps of their application.
 
