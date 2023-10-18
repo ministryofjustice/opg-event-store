@@ -9,10 +9,10 @@
       "description": "The UID of the LPA",
       "pattern": "M(-[A-Z0-9]{4}){3}"
     },
-    "outstandingFee": {
+    "fee": {
       "type": "integer",
-      "description": "The amount left to pay in pence eg 4100 = £41.00"
+      "description": "The expected total to be paid as a result of the fee reduction"
     }
   },
-  "required": ["uid", "outstandingFee"]
+  "required": ["uid", "fee"]
 }
