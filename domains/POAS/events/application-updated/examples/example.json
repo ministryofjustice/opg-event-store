@@ -6,7 +6,14 @@
     "firstNames": "Jack",
     "lastName": "Rubik",
     "dob": "1938-03-18",
-    "postcode": "N184EQ"
+    "address": {
+      "line1": "Flat 312",
+      "line2": "1 Scotland Street",
+      "line3": "Old Town",
+      "town": "Edinburgh",
+      "postcode": "N184EQ",
+      "country": "GB"
+    }
   },
   "previousApplicationUid": "M-4567-1234-0001"
 }
