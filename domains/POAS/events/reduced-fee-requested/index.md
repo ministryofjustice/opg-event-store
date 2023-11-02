@@ -18,9 +18,7 @@ If the donor believes they qualify for a reduced fee then the OPG needs to asses
 
 MRLPA sends this event when a donor has made a reduced fees request so that Sirius can create tasks for caseworkers to review the evidence.
 
-<Admonition type="warning">
-    <strong>11th September:</strong> We haven't yet identifed whether this event occurs as soon as the request is made or once the evidence has been validated (i.a. being scanned for viruses)
-</Admonition>
+This event will be sent after the evidence has been scanned for viruses but in the case of online delivery the documents may not yet have replicated to the destination S3 bucket.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 
