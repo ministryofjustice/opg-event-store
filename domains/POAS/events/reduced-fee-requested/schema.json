@@ -27,5 +27,11 @@
       "enum": ["upload", "post"]
     }
   },
-  "required": ["uid", "requestType", "evidence", "evidenceDelivery"]
+  "if": {
+    "properties": {
+      "evidenceDelivery": { "const": "upload" }
+    }
+  },
+  "then": { "required": ["uid", "requestType", "evidence", "evidenceDelivery"] },
+  "else": { "required": ["uid", "requestType", "evidenceDelivery"] }
 }
