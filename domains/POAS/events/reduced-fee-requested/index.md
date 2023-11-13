@@ -18,7 +18,7 @@ If the donor believes they qualify for a reduced fee then the OPG needs to asses
 
 MRLPA sends this event when a donor has made a reduced fees request so that Sirius can create tasks for caseworkers to review the evidence.
 
-This event will be sent after the evidence has been scanned for viruses but in the case of online delivery the documents may not yet have replicated to the destination S3 bucket.
+This event will be sent after the evidence has been scanned for viruses, but before the documents have been replicated to the destination S3 bucket. When each document completes replication, it generates a [reduced-fee-evidence-received event](../reduced-fee-evidence-received).
 
 <NodeGraph title="Consumer / Producer Diagram" />
 
