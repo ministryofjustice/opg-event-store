@@ -17,7 +17,7 @@
     "type": {
       "type": "string",
       "description": "The type of LPA being created",
-      "enum": ["pfa", "hw", "pw", "pa"]
+      "enum": ["pfa", "hw", "personal-welfare", "property-and-affairs"]
     },
     "donor": {
       "type": "object",
