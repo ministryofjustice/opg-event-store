@@ -1,0 +1,22 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.sirius/further-info-requested.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.sirius/further-info-requested",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "M(-[A-Z0-9]{4}){3}"
+    },
+    "reducedFeeType": {
+      "type": "string",
+      "description": "E.g 'remission' or 'exemption'"
+    },
+    "postedDate": {
+      "type": "string",
+      "description": "The date when the letter to request further information was posted to the user"
+    }
+  },
+  "required": ["uid", "reducedFeeType", "postedDate"]
+}
