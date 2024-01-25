@@ -1,0 +1,24 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.sirius/notification-sent.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.makeregister/notification-sent",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "M(-[A-Z0-9]{4}){3}"
+    },
+    "deliveryMethod": {
+      "type": "string",
+      "description": "How the notification was sent",
+      "enum": ["Email"]
+    },
+    "subject": {
+      "type": "string",
+      "description": "What the notification was about",
+      "enum": ["CertificateProviderInvite"]
+    }
+  },
+  "required": ["uid", "deliveryMethod", "subject"]
+}
