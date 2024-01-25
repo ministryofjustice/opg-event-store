@@ -9,15 +9,11 @@
       "description": "The UID of the LPA",
       "pattern": "M(-[A-Z0-9]{4}){3}"
     },
-    "deliveryMethod": {
+    "notificationId": {
       "type": "string",
-      "description": "How the notification was sent",
-      "enum": ["Email", "SMS"]
-    },
-    "subject": {
-      "type": "string",
-      "description": "What the notification was about"
+      "description": "The GOV UK Notify id of the notification sent",
+      "pattern": "([a-z0-9]{8}-)([a-z0-9]{4}-){3}([a-z0-9]{12})"
     }
   },
-  "required": ["uid", "deliveryMethod", "subject"]
+  "required": ["uid", "notificationId"]
 }
