@@ -12,7 +12,7 @@
     "deliveryMethod": {
       "type": "string",
       "description": "How the notification was sent",
-      "enum": ["Email"]
+      "enum": ["Email", "SMS"]
     },
     "subject": {
       "type": "string",
