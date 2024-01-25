@@ -16,8 +16,7 @@
     },
     "subject": {
       "type": "string",
-      "description": "What the notification was about",
-      "enum": ["CertificateProviderInvite"]
+      "description": "What the notification was about"
     }
   },
   "required": ["uid", "deliveryMethod", "subject"]
