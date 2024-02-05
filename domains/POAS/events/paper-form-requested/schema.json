@@ -1,0 +1,47 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.sirius/paper-form-requested.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.makeregister/paper-form-requested",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "M(-[A-Z0-9]{4}){3}"
+    },
+    "actorType": {
+      "type": "string",
+      "description": "The type of actor that needs a paper form",
+      "enum": ["CertificateProvider", "Attorney", "ReplacementAttorney"]
+    },
+    "address": {
+      "type": "object",
+      "description": "The address to send the paper form to",
+      "properties": {
+        "line1": {
+          "type": "string"
+        },
+        "line2": {
+          "type": "string"
+        },
+        "line3": {
+          "type": "string"
+        },
+        "town": {
+          "type": "string"
+        },
+        "postcode": {
+          "type": "string",
+          "pattern": "[A-Z0-9 ]{1,9}"
+        },
+        "country": {
+          "type": "string",
+          "description": "2-digit ISO 3166-1 country code per FCDO definitions: https://www.gov.uk/government/publications/geographical-names-and-information",
+          "pattern": "[A-Z]{2}"
+        }
+      },
+      "required": ["line1", "town", "country"]
+    }
+  },
+  "required": ["uid", "actorType", "address"]
+}
