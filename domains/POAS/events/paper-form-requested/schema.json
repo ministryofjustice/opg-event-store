@@ -12,7 +12,7 @@
     "actorType": {
       "type": "string",
       "description": "The type of actor that needs a paper form",
-      "enum": ["CertificateProvider", "Attorney", "ReplacementAttorney"]
+      "enum": ["certificateProvider", "attorney", "replacementAttorney"]
     },
     "actorUid": {
       "type": "string",
@@ -22,7 +22,7 @@
   },
   "if": {
     "properties": {
-      "actorType": { "const": "CertificateProvider" }
+      "actorType": { "const": "certificateProvider" }
     }
   },
   "then": { "required": ["uid", "actorType"] },
