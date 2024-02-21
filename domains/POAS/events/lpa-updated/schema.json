@@ -1,0 +1,18 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.lpastore/lpa-updated.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.lpastore/lpa-updated",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "M(-[A-Z0-9]{4}){3}"
+    },
+    "createdAt": {
+      "type": "string",
+      "description": "The type of change to the LPA"
+    }
+  },
+  "required": ["uid", "changeType"]
+}
