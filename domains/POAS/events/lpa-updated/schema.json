@@ -9,7 +9,7 @@
       "description": "The UID of the LPA",
       "pattern": "M(-[A-Z0-9]{4}){3}"
     },
-    "createdAt": {
+    "changeType": {
       "type": "string",
       "description": "The type of change to the LPA"
     }
