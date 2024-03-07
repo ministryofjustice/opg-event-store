@@ -7,6 +7,7 @@ producers:
     - opg.poas.lpastore
 consumers:
     - opg.poas.sirius
+    - opg.poas.makeregister
 owners:
     - vega
 ---
@@ -16,6 +17,8 @@ owners:
 When an LPA is created or updated, this event is triggered.
 
 Sirius uses the event to update the LPA record and status, providing OPG staff with the latest data to provide application support.
+
+MRLPA uses the event to update the status of the LPA and trigger communications to actors.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 
