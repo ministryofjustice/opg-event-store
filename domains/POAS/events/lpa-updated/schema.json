@@ -11,7 +11,7 @@
     },
     "actorUID": {
       "type": "string",
-      "description": "The UID of the actor making the change",
+      "description": "The UID of the actor the change relates to",
       "pattern": "urn:opg:poas:makeregister:users:([a-z0-9]{8}-)([a-z0-9]{4}-){3}([a-z0-9]{12})"
     },
     "changeType": {
