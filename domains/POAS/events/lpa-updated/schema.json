@@ -17,7 +17,7 @@
     "changeType": {
       "type": "string",
       "description": "The type of change to the LPA",
-      "enum": ["CREATED", "CERTIFICATE_PROVIDER_SIGN", "ATTORNEY_SIGN", "TRUST_CORPORATION_SIGN"]
+      "enum": ["CREATE", "CERTIFICATE_PROVIDER_SIGN", "ATTORNEY_SIGN", "TRUST_CORPORATION_SIGN"]
     }
   },
   "allOf": [
@@ -50,12 +50,12 @@
     {
       "if": {
         "properties": {
-          "changeType": { "const": "ATTORNEY_SIGN" }
+          "changeType": { "const": "TRUST_CORPORATION_SIGN" }
         }
       },
       "then": {
         "properties": {
-          "changeType": { "const": "ATTORNEY_SIGN" }
+          "changeType": { "const": "TRUST_CORPORATION_SIGN" }
         },
         "required": ["uid", "actorUID", "changeType"]
       }
@@ -63,12 +63,12 @@
     {
       "if": {
         "properties": {
-          "changeType": { "const": "CREATED" }
+          "changeType": { "const": "CREATE" }
         }
       },
       "then": {
         "properties": {
-          "changeType": { "const": "CREATED" }
+          "changeType": { "const": "CREATE" }
         },
         "required": ["uid", "changeType"]
       }
