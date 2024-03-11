@@ -11,30 +11,34 @@ addFormats(ajv);
 const errors = [];
 const __filename = fileURLToPath(import.meta.url);
 
-const examples = await glob(
-  path.join(path.dirname(__filename), "/../domains/**/examples/*.json")
-);
+const schemas = await glob(
+    path.join(path.dirname(__filename), "/../domains/**/schema.json")
+)
 
-examples.forEach((examplePath) => {
-  const schemaPath = path.join(
-    path.dirname(path.dirname(examplePath)),
-    "schema.json"
-  );
+for (const schemaPath of schemas) {
+  const examples = await glob(path.join(
+      path.dirname(schemaPath),
+      "**/examples/*.json"
+  ));
+
   const eventName = path.basename(path.dirname(schemaPath));
 
   /** @type {import("ajv").Schema} schema */
   const schema = JSON.parse(fs.readFileSync(schemaPath).toString());
-  const data = JSON.parse(fs.readFileSync(examplePath).toString());
 
-  const validateFn = ajv.compile(schema);
-  const valid = validateFn(data);
-  if (!valid) {
-    errors.push({
-      eventName,
-      errors: validateFn.errors,
-    });
-  }
-});
+  examples.forEach((examplePath) => {
+    const data = JSON.parse(fs.readFileSync(examplePath).toString());
+
+    const validateFn = ajv.compile(schema);
+    const valid = validateFn(data);
+    if (!valid) {
+      errors.push({
+        eventName,
+        errors: validateFn.errors,
+      });
+    }
+  })
+}
 
 if (errors.length) {
   console.log(`🚨 Some errors were detected in examples:`);

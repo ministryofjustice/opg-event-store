@@ -9,10 +9,69 @@
       "description": "The UID of the LPA",
       "pattern": "M(-[A-Z0-9]{4}){3}"
     },
+    "actorUID": {
+      "type": "string",
+      "description": "The UID of the actor the change relates to",
+      "pattern": "urn:opg:poas:makeregister:users:([a-z0-9]{8}-)([a-z0-9]{4}-){3}([a-z0-9]{12})"
+    },
     "changeType": {
       "type": "string",
-      "description": "The type of change to the LPA"
+      "description": "The type of change to the LPA",
+      "enum": ["CREATE", "CERTIFICATE_PROVIDER_SIGN", "ATTORNEY_SIGN", "TRUST_CORPORATION_SIGN"]
     }
   },
-  "required": ["uid", "changeType"]
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "changeType": { "const": "CERTIFICATE_PROVIDER_SIGN" }
+        }
+      },
+      "then": {
+        "properties": {
+          "changeType": { "const": "CERTIFICATE_PROVIDER_SIGN" }
+        },
+        "required": ["uid", "actorUID", "changeType"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "changeType": { "const": "ATTORNEY_SIGN" }
+        }
+      },
+      "then": {
+        "properties": {
+          "changeType": { "const": "ATTORNEY_SIGN" }
+        },
+        "required": ["uid", "actorUID", "changeType"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "changeType": { "const": "TRUST_CORPORATION_SIGN" }
+        }
+      },
+      "then": {
+        "properties": {
+          "changeType": { "const": "TRUST_CORPORATION_SIGN" }
+        },
+        "required": ["uid", "actorUID", "changeType"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "changeType": { "const": "CREATE" }
+        }
+      },
+      "then": {
+        "properties": {
+          "changeType": { "const": "CREATE" }
+        },
+        "required": ["uid", "changeType"]
+      }
+    }
+  ]
 }
