@@ -24,5 +24,5 @@
       "description": "One-time code that can be used by the actor to complete their actions online"
     }
   },
-  "required": ["uid", "actorType", "actorUID"]
+  "required": ["uid", "actorType", "actorUID", "accessCode"]
 }
