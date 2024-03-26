@@ -1,16 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    ":semanticCommitTypeAll(build)"
+    "config:base"
   ],
+  "branchNameStrict": true,
+  "branchPrefix": "renovate-",
+  "labels": [
+    "Dependencies",
+    "Renovate"
+  ],
+  "prConcurrentLimit": 0,
+  "branchConcurrentLimit": 0,
   "packageRules": [
     {
-      "groupName": "Patch & Minor Updates",
+      "groupName": "Minor & Patch Updates",
       "groupSlug": "all-minor-patch-updates",
-      "labels": [
-        "dependencies"
-      ],
       "matchPackagePatterns": [
         "*"
       ],
@@ -18,8 +22,21 @@
         "minor",
         "patch"
       ],
-      "prCreation": "immediate",
-      "stabilityDays": 3
+      "stabilityDays": 3,
+      "schedule": ["on sunday"],
+      "commitMessageSuffix": " #patch"
     }
-  ]
+  ],
+  "major": {
+    "schedule": ["on sunday"],
+    "commitMessageSuffix": " #minor"
+  },
+  "vulnerabilityAlerts": {
+    "groupName": "Security Alerts",
+    "stabilityDays": 0,
+    "rangeStrategy": "update-lockfile",
+    "commitMessagePrefix": "[SECURITY]",
+    "branchTopic": "{{{datasource}}}-{{{depName}}}-vulnerability",
+    "prCreation": "immediate"
+  }
 }
