@@ -7,12 +7,12 @@
     "lpaID": {
       "type": "string",
       "description": "The ID of the LPA",
-      "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
     },
     "donorSessionID": {
       "type": "string",
       "description": "The ID for the donor session",
-        "pattern": "[a-zA-Z0-9]+={0,2}"
+        "pattern": "^[a-zA-Z0-9]+={0,2}$"
     },
     "type": {
       "type": "string",
@@ -34,7 +34,7 @@
         "postcode": {
             "type": "string",
             "description": "The donor's postcode",
-            "pattern": "[A-Z0-9 ]{1,9}"
+            "pattern": "^[A-Z0-9 ]{1,9}$"
         }
       },
       "required": ["name", "dob", "postcode"]
