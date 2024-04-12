@@ -4,7 +4,7 @@ version: 0.0.1
 summary: |
     Announces that the donor has completed their LPA submission
 producers:
-    - opg.poas.sirius
+    - opg.poas.sirius-proposed
 consumers:
     - opg.poas.makeregister
 owners:
