@@ -14,7 +14,7 @@
     "@types/node": "20.12.6",
     "@types/react": "18.2.75",
     "ajv": "^8.12.0",
-    "ajv-formats": "^2.1.1",
+    "ajv-formats": "^3.0.0",
     "autoprefixer": "10.4.19",
     "cross-env": "^7.0.3",
     "glob": "^10.3.4",
