@@ -2,14 +2,14 @@
 name: certificate-provider-submission-completed
 version: 0.0.1
 summary: |
-    Announces that the certificate provider has completed their LPA submission
+  Announces that the certificate provider has completed their LPA submission
 producers:
-    - opg.poas.sirius
+  - opg.poas.sirius-proposed
 consumers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 owners:
-    - vega
-    - mrlpa
+  - vega
+  - mrlpa
 ---
 
 ## Details
