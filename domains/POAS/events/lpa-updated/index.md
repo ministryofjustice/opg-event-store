@@ -7,6 +7,7 @@ producers:
     - opg.poas.lpastore
 consumers:
     - opg.poas.sirius
+    - opg.poas.makeregister
 owners:
     - vega
 ---
