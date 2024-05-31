@@ -1,7 +1,7 @@
 {
-  "$id": "https://opg.service.justice.gov.uk/opg.poas.makeregister/payment-created.json",
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.makeregister/payment-received.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "opg.poas.makeregister/payment-created",
+  "title": "opg.poas.makeregister/payment-received",
   "type": "object",
   "properties": {
     "uid": {

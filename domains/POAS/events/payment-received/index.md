@@ -1,8 +1,8 @@
 ---
-name: payment-created
+name: payment-received
 version: 0.0.1
 summary: |
-  A payment has been created in GovUK Pay
+  A payment has been successful in GovUK Pay
 producers:
     - opg.poas.makeregister
 consumers:
@@ -14,7 +14,7 @@ owners:
 
 ## Details
 
-When a payment is created in GovUK Pay this event is sent. Multiple payments may be created for a single LPA.
+When a payment is taken in GovUK Pay and the result is success, this event is sent. Multiple payments may be created for a single LPA.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 
