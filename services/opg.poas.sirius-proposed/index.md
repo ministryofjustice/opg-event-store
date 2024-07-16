@@ -1,7 +1,9 @@
 ---
-name: opg.poas.sirius-proposed
+id: opg.poas.sirius-proposed
+name: opg.poas.sirius (proposed)
 summary: |
   Proposed events for opg.poas.sirius
+version: "1"
 owners:
   - vega
 repository:

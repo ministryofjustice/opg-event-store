@@ -1,12 +1,13 @@
 ---
+id: reduced-fee-approved
 name: reduced-fee-approved
 version: 0.0.1
 summary: |
   An OPG user has approved an end user's application to pay a reduced fee
-producers:
-    - opg.poas.sirius
-consumers:
-    - opg.poas.makeregister
+# producers:
+#     - opg.poas.sirius
+# consumers:
+#     - opg.poas.makeregister
 owners:
     - vega
     - mrlpa

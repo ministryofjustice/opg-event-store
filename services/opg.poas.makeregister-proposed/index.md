@@ -1,7 +1,9 @@
 ---
-name: opg.poas.makeregister-proposed
+id: opg.poas.makeregister-proposed
+name: opg.poas.makeregister (proposed)
 summary: |
   Proposed events for opg.poas.makeregister
+version: "1"
 owners:
   - mrlpa
 repository:

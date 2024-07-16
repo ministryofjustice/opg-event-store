@@ -1,12 +1,13 @@
 ---
+id: donor-submission-completed
 name: donor-submission-completed
 version: 0.0.1
 summary: |
     Announces that the donor has completed their LPA submission
-producers:
-    - opg.poas.sirius-proposed
-consumers:
-    - opg.poas.makeregister
+# producers:
+#     - opg.poas.sirius-proposed
+# consumers:
+#     - opg.poas.makeregister
 owners:
     - vega
     - mrlpa

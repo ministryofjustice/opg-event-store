@@ -3,11 +3,12 @@
 
 # Production
 /build
-/public/schemas
 
 # Generated files
-.next
+.astro
 out
+dist
+
 
 # Misc
 .DS_Store

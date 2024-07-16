@@ -1,12 +1,17 @@
 ---
+id: opg.poas.sirius
 name: opg.poas.sirius
 summary: |
   OPG's case management system for Powers of Attorney
+version: "1"
 owners:
     - vega
 repository:
   language: PHP
   url: https://github.com/ministryofjustice/opg-sirius
+receives:
+  - id: application-updated
+    version: 0.0.1
 ---
 
 > The Sirius system is the core case management system for the Office of the Public Guardian. It is used by just over 1000 casework and customer service staff to administer Lasting Powers of Attorney and Supervision orders under the Mental Capacity Act of 2005. Sirius replaces two legacy case management systems, MERIS (LPA) and CASREC (Supervision). The input to SIRIUS is from scanned paper LPA and Supervision order applications and correspondence.

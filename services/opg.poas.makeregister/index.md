@@ -1,12 +1,17 @@
 ---
+id: opg.poas.makeregister
 name: opg.poas.makeregister
 summary: |
   Make and Register an LPA
+version: "1"
 owners:
     - mrlpa
 repository:
   language: Go
   url: https://github.com/ministryofjustice/opg-modernising-lpa
+sends:
+  - id: application-updated
+    version: 0.0.1
 ---
 
 The Ministry of Justice and the Office of the Public Guardian (OPG) are working on a project to **modernise lasting powers of attorney**.

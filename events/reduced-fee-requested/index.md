@@ -1,12 +1,13 @@
 ---
+id: reduced-fee-requested
 name: reduced-fee-requested
 version: 0.0.1
 summary: |
   The applicant has requested to pay a reduced fee
-producers:
-    - opg.poas.makeregister
-consumers:
-    - opg.poas.sirius
+# producers:
+#     - opg.poas.makeregister
+# consumers:
+#     - opg.poas.sirius
 owners:
     - vega
     - mrlpa

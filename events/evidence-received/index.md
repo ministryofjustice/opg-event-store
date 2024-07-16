@@ -1,12 +1,13 @@
 ---
+id: evidence-received
 name: evidence-received
 version: 0.0.1
 summary: |
   The OPG has received the applicant's evidence
-producers:
-    - opg.poas.sirius
-consumers:
-    - opg.poas.makeregister
+# producers:
+#     - opg.poas.sirius
+# consumers:
+#     - opg.poas.makeregister
 owners:
     - vega
     - mrlpa

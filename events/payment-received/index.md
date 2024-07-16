@@ -1,12 +1,13 @@
 ---
+id: payment-received
 name: payment-received
 version: 0.0.1
 summary: |
   A payment has been successful in GovUK Pay
-producers:
-    - opg.poas.makeregister
-consumers:
-    - opg.poas.sirius-proposed
+# producers:
+#     - opg.poas.makeregister
+# consumers:
+#     - opg.poas.sirius-proposed
 owners:
     - vega
     - mrlpa

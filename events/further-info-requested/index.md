@@ -1,12 +1,13 @@
 ---
+id: further-info-requested
 name: further-info-requested
 version: 0.0.1
 summary: |
   An OPG user has send a letter to the user to request further information to support their application to pay a reduced fee for their LPA
-producers:
-    - opg.poas.sirius
-consumers:
-    - opg.poas.makeregister
+# producers:
+#     - opg.poas.sirius
+# consumers:
+#     - opg.poas.makeregister
 owners:
     - vega
     - mrlpa

@@ -1,12 +1,13 @@
 ---
+id: notification-sent
 name: notification-sent
 version: 0.0.1
 summary: |
   A notification has been sent by MRLPA to an actor on a LPA
-producers:
-    - opg.poas.makeregister
-consumers:
-    - opg.poas.sirius
+# producers:
+#     - opg.poas.makeregister
+# consumers:
+#     - opg.poas.sirius
 owners:
     - mrlpa
 ---

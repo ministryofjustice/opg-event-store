@@ -1,12 +1,13 @@
 ---
+id: uid-requested
 name: uid-requested
 version: 0.0.1
 summary: |
   A UID is requested for an LPA
-producers:
-    - opg.poas.makeregister
-consumers:
-    - opg.poas.makeregister
+# producers:
+#     - opg.poas.makeregister
+# consumers:
+#     - opg.poas.makeregister
 owners:
     - mrlpa
 ---

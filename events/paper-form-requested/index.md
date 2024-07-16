@@ -1,12 +1,13 @@
 ---
+id: paper-form-requested
 name: paper-form-requested
 version: 0.0.1
 summary: |
   The donor has indicated an actor wants to complete their actions using a paper form
-producers:
-    - opg.poas.makeregister
-consumers:
-    - opg.poas.sirius-proposed
+# producers:
+#     - opg.poas.makeregister
+# consumers:
+#     - opg.poas.sirius-proposed
 owners:
     - mrlpa
 ---

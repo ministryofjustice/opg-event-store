@@ -1,12 +1,13 @@
 ---
+id: reduced-fee-evidence-received
 name: reduced-fee-evidence-received
 version: 0.0.1
 summary: |
   Uploaded evidence to support a reduced fee request has arraived in Sirius
-producers:
-    - opg.poas.sirius
-consumers:
-    - opg.poas.sirius
+# producers:
+#     - opg.poas.sirius
+# consumers:
+#     - opg.poas.sirius
 owners:
     - vega
 ---

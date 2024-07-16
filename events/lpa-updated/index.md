@@ -1,13 +1,14 @@
 ---
+id: lpa-updated
 name: lpa-updated
 version: 0.0.1
 summary: |
   Announces creation of or updates to an LPA
-producers:
-    - opg.poas.lpastore
-consumers:
-    - opg.poas.sirius
-    - opg.poas.makeregister
+# producers:
+#     - opg.poas.lpastore
+# consumers:
+#     - opg.poas.sirius
+#     - opg.poas.makeregister
 owners:
     - vega
 ---
