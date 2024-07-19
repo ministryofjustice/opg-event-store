@@ -2,19 +2,31 @@
 name: evidence-received
 version: 0.0.1
 summary: |
-  The OPG has received the applicant's evidence
+  The OPG has received paper evidence to support a donor's reduced fee application
 producers:
-    - opg.poas.sirius
+  - opg.poas.sirius-proposed
 consumers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 owners:
-    - vega
-    - mrlpa
+  - vega
+  - mrlpa
 ---
+
+## Context
+
+A paper donor has applied for a reduced fee. OPG staff review all reduced fee applications.
+
+An OPG user has identified that they cannot approve or reject the reduced fee application without further information and has sent a letter to the donor asking for more specifics.
+
+The user has sent the additional evidence to the OPG and it has been scanned on to the system
+
+## Trigger
+
+Sirius has ingested correspondence which it has identified<sup>[how?]</sup> as evidence for the donor's reduced fee application.
 
 ## Details
 
-When an applicant requests a reduced fee, they must provide evidence for their claim for the OPG to review. This event is sent by Sirius when the evidence has been received, copied into Sirius's storage, and a task has been created for a caseworker to review.
+The task list in MRLPA tells the user that their evidence has been received by the OPG.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

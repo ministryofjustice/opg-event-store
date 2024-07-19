@@ -2,7 +2,7 @@
 name: certificate-provider-submission-completed
 version: 0.0.1
 summary: |
-  Announces that the certificate provider has completed their LPA submission
+  The certificate provider has completed their LPA submission
 producers:
   - opg.poas.sirius-proposed
 consumers:
@@ -12,9 +12,21 @@ owners:
   - mrlpa
 ---
 
-## Details
+## Context
 
-When a certificate provider has completed their certificate and it is valid this event is triggered and causes the attorneys to be notified that they can start their actions.
+The paper certificate provider has signed the document we sent them and returned it to us.
+
+The document has been scanned and uploaded as structured data to the LPA Store.
+
+## Trigger
+
+If there are no anomalies detected in the data, Sirius immeditely sends the event.
+
+If there are anomalies in the data, Sirius waits until a case worker has resolved them and then sends the event.
+
+## Effect
+
+MRLPA sends notifications to attorneys asking them to sign the LPA.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

@@ -2,23 +2,33 @@
 name: reduced-fee-requested
 version: 0.0.1
 summary: |
-  The applicant has requested to pay a reduced fee
+  The donor has requested to pay a reduced fee
 producers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 consumers:
-    - opg.poas.sirius
+  - opg.poas.sirius
 owners:
-    - vega
-    - mrlpa
+  - vega
+  - mrlpa
 ---
 
-## Details
+## Context
 
-If the donor believes they qualify for a reduced fee then the OPG needs to assess their claim, review supporting evidence, and decide whether to apply a fee reduction.
+The online donor has applied for a reduced fee.
 
-MRLPA sends this event when a donor has made a reduced fees request so that Sirius can create tasks for caseworkers to review the evidence.
+## Trigger
 
-This event will be sent after the evidence has been scanned for viruses, but before the documents have been replicated to the destination S3 bucket. When each document completes replication, it generates a [reduced-fee-evidence-received event](../reduced-fee-evidence-received).
+If the donor provides their evidence online: all files have successfully been uploaded and passed a virus scan.
+
+If the donor provides their evidence on paper: the donor has read the instructions for sending their evidence and confirmed they understand them.
+
+## Effect
+
+Sirius creates a task for a caseworker to review the evidence.
+
+If evidence is being provided on paper, the task will become available in 10 business days.
+
+If evidence is being provided online, the task is available instantly. Sirius creates a placeholder document record for each of the online files expected, and will receive a [reduced-fee-evidence-received](../reduced-fee-evidence-received) event when each arrives in S3.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

@@ -2,19 +2,25 @@
 name: payment-received
 version: 0.0.1
 summary: |
-  A payment has been successful in GovUK Pay
+  The payment has been successful in GOV.UK Pay
 producers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 consumers:
-    - opg.poas.sirius-proposed
+  - opg.poas.sirius-proposed
 owners:
-    - vega
-    - mrlpa
+  - vega
+  - mrlpa
 ---
 
-## Details
+## Trigger
 
-When a payment is taken in GovUK Pay and the result is success, this event is sent. Multiple payments may be created for a single LPA.
+MRLPA has directed a user to GOV.UK Pay and GOV.UK Pay has sent them back with confirmation that the transaction is complete.
+
+This does not mean the payment has arrived in OPG's bank account.
+
+## Effect
+
+Sirius fetches the payment details from GOV.UK Pay and stores a payment record in its database so the payment can be displayed in the UI.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

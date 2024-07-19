@@ -2,23 +2,31 @@
 name: lpa-updated
 version: 0.0.1
 summary: |
-  Announces creation of or updates to an LPA
+  The LPA's details have changed
 producers:
-    - opg.poas.lpastore
+  - opg.poas.lpastore
 consumers:
-    - opg.poas.sirius
-    - opg.poas.makeregister
+  - opg.poas.sirius
+  - opg.poas.makeregister
 owners:
-    - vega
+  - vega
 ---
 
-## Details
+## Context
 
-When an LPA is created or updated, this event is triggered.
+The LPA has been signed and submitted.
 
-Sirius uses the event to update the LPA record and status, providing OPG staff with the latest data to provide application support.
+## Trigger
 
-MRLPA uses the event to update the status of the LPA and trigger communications to actors.
+Any changes to the contents of the LPA. This includes changing original information (like the donor moving house) or the addition of new information (like an attorney signing the LPA).
+
+## Effect
+
+Both Sirius and MRLPA make decisions of their effect based on what data is now in the store.
+
+For Sirius this includes calculating progress indicators and detecting anomalies.
+
+For MRLPA this includes updating the task list.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

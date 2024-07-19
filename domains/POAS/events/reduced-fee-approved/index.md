@@ -2,21 +2,29 @@
 name: reduced-fee-approved
 version: 0.0.1
 summary: |
-  An OPG user has approved an end user's application to pay a reduced fee
+  An OPG user has approved the donor's application to pay a reduced fee
 producers:
-    - opg.poas.sirius
+  - opg.poas.sirius
 consumers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 owners:
-    - vega
-    - mrlpa
+  - vega
+  - mrlpa
 ---
 
-## Details
+## Context
 
-Caseworkers will review user requests to pay a reduced fee for their LPA. If users are found to be eligible, then a caseworker will apply a reduced fee to the case to 'approve' the request.
+The online donor has applied for a reduced fee. OPG staff review all reduced fee applications.
 
-Sirius sends this event when a caseworker has applied a reduced fee to a case so that MRLPA can inform the user of the outcome, allowing them to pay the outstanding fee if there is one, and proceed with the next steps of their application.
+An OPG user has approved the application.
+
+## Trigger
+
+A fee reduction record has been added in Sirius.
+
+## Effect
+
+The task list in MRLPA shows the payment task as completed.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 
