@@ -14,11 +14,11 @@ owners:
 
 ## Context
 
-A paper donor has applied for a reduced fee. OPG staff review all reduced fee applications.
+A donor has applied for a reduced fee. OPG staff review all reduced fee applications.
 
-An OPG user has identified that they cannot approve or reject the reduced fee application without further information and has sent a letter to the donor asking for more specifics.
+The user has sent evidence to the OPG to support this application and it has been scanned on to the system.
 
-The user has sent the additional evidence to the OPG and it has been scanned on to the system
+This may be their initial submission of evidence, or further evidence that the OPG has requested after review.
 
 ## Trigger
 
