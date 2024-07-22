@@ -2,21 +2,29 @@
 name: reduced-fee-declined
 version: 0.0.1
 summary: |
-  An OPG user has declined an end user's application to pay a reduced fee
+  An OPG user has declined the donor's application to pay a reduced fee
 producers:
-    - opg.poas.sirius
+  - opg.poas.sirius
 consumers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 owners:
-    - vega
-    - mrlpa
+  - vega
+  - mrlpa
 ---
 
-## Details
+## Context
 
-Caseworkers will review user requests to pay a reduced fee for their LPA. If users are found to be not eligible, then a caseworker will not apply the reduced fee and 'decline' the request.
+The online donor has applied for a reduced fee. OPG staff review all reduced fee applications.
 
-Sirius sends this event when a caseworker has declined a reduced fee to a case so that MRLPA can inform the user of the outcome, allowing them to pay the outstanding fee if there is one, and proceed with the next steps of their application.
+An OPG user has declined the application.
+
+## Trigger
+
+A fee decision record with a "decline" outcome has been added in Sirius.
+
+## Effect
+
+The task list in MRLPA shows the payment task as declined and asks the donor to pay the full fee to continue.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

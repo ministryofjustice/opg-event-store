@@ -2,20 +2,32 @@
 name: reduced-fee-evidence-received
 version: 0.0.1
 summary: |
-  Uploaded evidence to support a reduced fee request has arraived in Sirius
+  The evidence uploaded to support a reduced fee request has arrived in Sirius
 producers:
-    - opg.poas.sirius
+  - opg.poas.sirius.s3.reduced-fee-evidence
 consumers:
-    - opg.poas.sirius
+  - opg.poas.sirius
 owners:
-    - vega
+  - vega
 ---
+
+<Admonition type="warning">This event is internal to MRLPA</Admonition>
+
+## Context
+
+The online donor has applied for a reduced fee and upload evidence to support their application.
+
+In the [reduced-fee-requested event](../reduced-fee-requested/), MRLPA has told Sirius what files to expect as evidence. Sirius creates placeholder documents that are visible in the UI.
+
+The uploaded file is saved in MRLPA's S3 bucket and then synchronised to a bucket in Sirius. Since this happens on an irregular schedule, Sirius needs to process the upload asynchronously.
+
+## Trigger
+
+A file has finished being copied into Sirius's reduced fee evidence bucket.
 
 ## Details
 
-When donors request a reduced fee, they must provide evidence to support their request. They can either upload this to MRLPA or send it to the OPG in the post.
-
-MRLPA sends a [reduced-fee-requested event](../reduced-fee-requested/) when the donor makes the request, which contains the paths of any expected evidence uploads. Those uploads are then asynchronously replicated into Sirius, generating a **reduced-fee-evidence-received** event for each as they arrive.
+Sirius finds the placeholder document for the evidence, adds the uploaded file contents, and sets its retrieved date.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

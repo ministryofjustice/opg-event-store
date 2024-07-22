@@ -2,21 +2,27 @@
 name: application-updated
 version: 0.0.1
 summary: |
-  Announces changes to the core data of an draft LPA application
+  The draft LPA application's details have changed
 producers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 consumers:
-    - opg.poas.sirius
+  - opg.poas.sirius
 owners:
-    - vega
-    - mrlpa
+  - vega
+  - mrlpa
 ---
 
-## Details
+## Context
 
-When a donor creates an application in MRLPA, or later updates their details, this event is triggered.
+The donor is drafting their LPA online.
 
-Sirius uses the event to keep a copy of the donor's identity, allowing OPG staff to search for the case and provide application support.
+## Trigger
+
+When a donor creates an application in MRLPA, or later updates their personal details in MRLPA.
+
+## Effect
+
+Sirius uses the event to keep a copy of the donor's personal details as a Draft LPA. OPG staff can then search for the case in Sirius to provide support during the application process.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

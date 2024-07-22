@@ -2,18 +2,28 @@
 name: uid-requested
 version: 0.0.1
 summary: |
-  A UID is requested for an LPA
+  A UID has been requested for the LPA
 producers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 consumers:
-    - opg.poas.makeregister
+  - opg.poas.makeregister
 owners:
-    - mrlpa
+  - mrlpa
 ---
+
+<Admonition type="warning">This event is internal to MRLPA</Admonition>
+
+## Context
+
+A donor has started a new LPA application online.
+
+## Trigger
+
+The donor confirms which type of LPA they want.
 
 ## Details
 
-MRLPA sends this event when an LPA has been created to the point that it should be shown on the dashboard.
+MRLPA asynchronously gets a UID via the UID service and attaches it to the LPA. It then emits a [application-updated](../application-updated) event.
 
 <NodeGraph title="Consumer / Producer Diagram" />
 
