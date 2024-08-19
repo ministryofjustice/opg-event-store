@@ -13,12 +13,7 @@
       "type": "string",
       "description": "The UID of the attorney",
       "pattern": "^urn:opg:poas:makeregister:users:([a-z0-9]{8}-)([a-z0-9]{4}-){3}([a-z0-9]{12})$"
-    },
-    "actorType": {
-      "type": "string",
-      "description": "The type of attorney that has been asked to sign",
-      "enum": ["attorney", "replacementAttorney", "trustCorporation", "replacementTrustCorporation"]
     }
   },
-  "required": ["uid", "actorUID", "actorType"]
+  "required": ["uid", "actorUID"]
 }
