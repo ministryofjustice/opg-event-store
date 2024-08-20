@@ -6,7 +6,7 @@ summary: |
 producers:
   - opg.poas.makeregister
 consumers:
-  - opg.poas.sirius-proposed
+  - opg.poas.sirius
 owners:
   - vega
   - mrlpa
