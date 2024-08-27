@@ -1,0 +1,34 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.identity-check/identity-check-resolved.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.identity-check/identity-check-resolved",
+  "type": "object",
+  "required": ["reference", "actorType", "lpaIds", "time", "outcome"],
+  "properties": {
+    "reference": {
+      "type": "string",
+      "description": "The back-reference for the identity check"
+    },
+    "actorType": {
+      "type": "string",
+      "enum": ["donor", "certificateProvider"]
+    },
+    "lpaIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "The UID of the LPA",
+        "pattern": "^M(-[A-Z0-9]{4}){3}$"
+      }
+    },
+    "time": {
+      "type": "string",
+      "description": "When the identity check was resolved",
+      "format": "date-time"
+    },
+    "outcome": {
+      "type": "string",
+      "enum": ["success", "exit"]
+    }
+  }
+}
