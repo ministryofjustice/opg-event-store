@@ -1,0 +1,14 @@
+{
+  "uid": "M-0000-1111-2222",
+  "actorUID": "urn:opg:poas:makeregister:users:740e5834-3a29-46b4-9a6f-16142fde533a",
+  "provided": {
+    "firstNames": "John",
+    "lastName": "Smith",
+    "dateOfBirth": "2000-01-02"
+  },
+  "verified": {
+    "firstNames": "Jonathan",
+    "lastName": "Smith",
+    "dateOfBirth": "2000-01-02"
+  }
+}
