@@ -1,4 +1,5 @@
 build:
+	rm -rf .eventcatalog-core
 	npm run build
 
 dev:
