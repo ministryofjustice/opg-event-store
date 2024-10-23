@@ -19,9 +19,7 @@
         "type": "string",
         "description": "The line's index and a description of why the line couldn't be processed"
       }
-    },
-    "required": [
-      "emailAddress"
-    ]
-  }
+    }
+  },
+  "required": ["emailAddress"]
 }
