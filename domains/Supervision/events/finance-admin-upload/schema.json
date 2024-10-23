@@ -11,7 +11,7 @@
     "filename": {
       "type": "string",
       "description": "The sub-directory and filename of the report in the async S3 bucket"
-    },
-    "required": ["emailAddress", "filename"]
-  }
+    }
+  },
+  "required": ["emailAddress", "filename"]
 }

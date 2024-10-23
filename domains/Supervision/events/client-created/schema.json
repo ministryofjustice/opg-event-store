@@ -11,10 +11,10 @@
     "courtRef": {
       "type": "string",
       "description": "The client's court reference number"
-    },
-    "required": [
-      "clientId",
-      "courtRef"
-    ]
-  }
+    }
+  },
+  "required": [
+    "clientId",
+    "courtRef"
+  ]
 }
