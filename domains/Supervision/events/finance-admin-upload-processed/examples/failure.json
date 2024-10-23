@@ -1,0 +1,4 @@
+{
+  "emailAddress": "test@email.com",
+  "failedLines": ["Line 1: Duplicate payment", "Line 5: Failed to parse date"]
+}
