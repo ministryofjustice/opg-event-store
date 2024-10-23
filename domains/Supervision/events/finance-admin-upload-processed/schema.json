@@ -1,5 +1,5 @@
 {
-  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/debt-position-changed.json",
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/finance-admin-upload-processed.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "opg.supervision.sirius/finance-admin-upload-processed",
   "type": "object",
