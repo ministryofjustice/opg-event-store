@@ -12,6 +12,10 @@
       "type": "string",
       "description": "A description of the error that occurred which caused the report to not be processed"
     },
+    "reportType": {
+      "type": "string",
+      "description": "The key for the report type that has been uploaded"
+    },
     "failedLines": {
       "type": "array",
       "description": "The lines of the report which were unable to be processed successfully",

@@ -1,3 +1,4 @@
 {
-  "emailAddress": "test@email.com"
+  "emailAddress": "test@email.com",
+  "reportType": "PAYMENTS_MOTO_CARD"
 }
