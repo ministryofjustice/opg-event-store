@@ -1,0 +1,21 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/finance-admin-upload.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/finance-admin-upload-processed",
+  "type": "object",
+  "properties": {
+    "emailAddress": {
+      "type": "string",
+      "description": "The email address of the user who uploaded the report"
+    },
+    "filename": {
+      "type": "string",
+      "description": "The sub-directory and filename of the report in the async S3 bucket"
+    },
+    "reportType": {
+      "type": "string",
+      "description": "The key for the report type that has been uploaded"
+    }
+  },
+  "required": ["emailAddress", "filename"]
+}
