@@ -12,9 +12,9 @@
       "type": "string",
       "description": "The sub-directory and filename of the report in the async S3 bucket"
     },
-    "reportType": {
+    "uploadType": {
       "type": "string",
-      "description": "The key for the report type that has been uploaded"
+      "description": "The key for the upload type that has been uploaded"
     }
   },
   "required": ["emailAddress", "filename"]
