@@ -9,10 +9,11 @@
       "description": "The UID of the LPA",
       "pattern": "^M(-[A-Z0-9]{4}){3}$"
     },
-    "fee": {
-      "type": "integer",
-      "description": "The expected total to be paid in pence as a result of the fee reduction"
+    "approvedType": {
+      "type": "string",
+      "description": "The type of reduction that was approved",
+      "enum": ["HalfFee", "QuarterFee", "NoFee"]
     }
   },
-  "required": ["uid", "fee"]
+  "required": ["uid", "approvedType"]
 }
