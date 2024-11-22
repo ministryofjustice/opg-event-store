@@ -11,7 +11,7 @@
     },
     "approvedType": {
       "type": "string",
-      "description": "The type of reduction thaat was approved",
+      "description": "The type of reduction that was approved",
       "enum": ["HalfFee", "QuarterFee", "NoFee"]
     }
   },
