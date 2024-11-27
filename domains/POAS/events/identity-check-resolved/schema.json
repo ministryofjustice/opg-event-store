@@ -28,7 +28,7 @@
     },
     "outcome": {
       "type": "string",
-      "enum": ["success", "exit"]
+      "enum": ["success", "failure", "court-of-protection", "exit"]
     }
   }
 }
