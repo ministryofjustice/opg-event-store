@@ -46,5 +46,11 @@ module.exports = {
       avatarUrl: `${publicPath}supervision.svg`,
       role: 'Team',
     },
+    {
+      id: 'use',
+      name: 'UaL',
+      avatarUrl: `${publicPath}use.svg`,
+      role: 'Team',
+    },
   ],
 }

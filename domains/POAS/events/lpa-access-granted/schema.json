@@ -1,0 +1,37 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.use/lpa-access-granted.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.use/lpa-access-granted",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "^M(-[A-Z0-9]{4}){3}$"
+    },
+    "lpaType": {
+      "type": "string",
+      "description": "The type of LPA",
+      "enum": ["pfa", "hw", "personal-welfare", "property-and-affairs"]
+    },
+    "map": {
+      "type": "array",
+      "description": "The user actor ID with it's associated Gov one Login subject ID",
+      "items": {
+          "type": "object",
+          "properties": {
+            "actorUid": {
+              "type": "object",
+              "properties": {
+                "subjectId": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "required": ["actorUid"]
+        }
+    }
+  },
+  "required": ["uid", "lpaType", "map"]
+}
