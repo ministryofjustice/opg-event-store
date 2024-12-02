@@ -1,20 +1,19 @@
 ---
-name: lpa-updated
+name: lpa-access-granted
 version: 0.0.1
 summary: |
-  The LPA's details have changed
+  Actor granted access in Use An LPA
 producers:
-  - opg.poas.lpastore
+  - opg.poas.use
 consumers:
-  - opg.poas.sirius
-  - opg.poas.makeregister
+  - opg.poas.mrlpa
 owners:
-  - vega
+  - use
 ---
 
 ## Context
 
-The LPA has been newly registered
+The LPA has been newly registered and the appropriate actors from MRLPA has been granted access in Use An LPA
 
 ## Trigger
 
