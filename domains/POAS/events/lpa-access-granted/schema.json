@@ -12,7 +12,7 @@
     "lpaType": {
       "type": "string",
       "description": "The type of LPA",
-      "enum": ["pfa", "hw", "personal-welfare", "property-and-affairs"]
+      "enum": ["personal-welfare", "property-and-affairs"]
     },
     "actors": {
       "type": "object",

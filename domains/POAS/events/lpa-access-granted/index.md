@@ -17,7 +17,7 @@ The LPA has been newly registered and the appropriate actors from MRLPA has been
 
 ## Trigger
 
-Once user registration has been success (account created)
+Once the LPA has been registered
 
 ## Effect
 
