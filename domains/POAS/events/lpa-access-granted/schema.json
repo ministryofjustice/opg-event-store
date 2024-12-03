@@ -15,13 +15,26 @@
       "enum": ["personal-welfare", "property-and-affairs"]
     },
     "actors": {
-      "type": "object",
-      "properties": {
-        "actorUid": {
-          "type": "string"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "actorUid",
+          "subjectId"
+        ],
+        "properties": {
+          "actorUid": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "subjectId": {
+            "type": "string"
+          }
         }
       },
-      "required": ["actorUid"]
+      "required": [
+        "actorUid"
+      ]
     }
   },
   "required": ["uid", "lpaType", "actors"]
