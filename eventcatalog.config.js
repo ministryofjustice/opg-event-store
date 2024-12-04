@@ -49,7 +49,7 @@ module.exports = {
     {
       id: 'use',
       name: 'UaL',
-      avatarUrl: `${publicPath}use.svg`,
+      avatarUrl: `${publicPath}ual.svg`,
       role: 'Team',
     },
   ],

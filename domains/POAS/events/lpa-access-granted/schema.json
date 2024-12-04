@@ -31,10 +31,7 @@
             "type": "string"
           }
         }
-      },
-      "required": [
-        "actorUid"
-      ]
+      }
     }
   },
   "required": ["uid", "lpaType", "actors"]
