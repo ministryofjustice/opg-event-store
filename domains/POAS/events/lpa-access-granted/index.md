@@ -4,7 +4,7 @@ version: 0.0.1
 summary: |
   Actor granted access in Use An LPA
 producers:
-  - opg.poas.mrlpa
+  - opg.poas.makeregister
 consumers:
   - opg.poas.use
 owners:
