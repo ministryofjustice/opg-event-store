@@ -12,14 +12,13 @@ const errors = [];
 const __filename = fileURLToPath(import.meta.url);
 
 const schemas = await glob(
-    path.join(path.dirname(__filename), "/../domains/**/schema.json")
-)
+  path.join(path.dirname(__filename), "/../domains/**/schema.json")
+);
 
 for (const schemaPath of schemas) {
-  const examples = await glob(path.join(
-      path.dirname(schemaPath),
-      "**/examples/*.json"
-  ));
+  const examples = await glob(
+    path.join(path.dirname(schemaPath), "**/examples/*.json")
+  );
 
   const eventName = path.basename(path.dirname(schemaPath));
 
@@ -34,16 +33,17 @@ for (const schemaPath of schemas) {
     if (!valid) {
       errors.push({
         eventName,
+        fileName: path.basename(examplePath),
         errors: validateFn.errors,
       });
     }
-  })
+  });
 }
 
 if (errors.length) {
   console.log(`🚨 Some errors were detected in examples:`);
   errors.forEach((errorSet) => {
-    console.log(`\nIn ${errorSet.eventName}`);
+    console.log(`\nIn ${errorSet.eventName}/${errorSet.fileName}`);
 
     errorSet.errors.forEach((error) => {
       console.log(`- ${error.instancePath} ${error.message}`);

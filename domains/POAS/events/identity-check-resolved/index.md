@@ -11,6 +11,8 @@ owners:
   - vega
 ---
 
+<Admonition type="alert">This event has been deprecated. Use <a href="../identity-check-updated/">identity-check-updated</a> instead</Admonition>
+
 ## Context
 
 An offline identity check has been resolved, whether successful, a failure or an exit.

@@ -1,0 +1,78 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.identity-check/identity-check-updated.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.identity-check/identity-check-updated",
+  "type": "object",
+  "required": ["time", "lpaUids", "actorType", "state"],
+  "properties": {
+    "time": {
+      "type": "string",
+      "description": "When the update occurred",
+      "format": "date-time"
+    },
+    "lpaUids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "The UIDs of the LPAs associated with the identity check",
+        "pattern": "^M(-[A-Z0-9]{4}){3}$"
+      }
+    },
+    "actorType": {
+      "type": "string",
+      "enum": ["donor", "certificateProvider"],
+      "description": "The type of actor associated with the identity check"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "COP_STARTED",
+        "COUNTER_SERVICE_STARTED",
+        "EXIT",
+        "FAILURE",
+        "SUCCESS",
+        "VOUCH_STARTED"
+      ]
+    },
+    "reference": {
+      "type": "string",
+      "description": "The back-reference for a successful identity check"
+    },
+    "voucherName": {
+      "type": "string",
+      "description": "The name of the voucher that the donor nominated"
+    },
+    "voucherAddress": {
+      "type": "array",
+      "description": "The mailing address of the voucher that the donor nominated",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["state"],
+        "properties": {
+          "state": { "const": "SUCCESS" }
+        }
+      },
+      "then": {
+        "required": ["reference"]
+      }
+    },
+    {
+      "if": {
+        "required": ["state"],
+        "properties": {
+          "state": { "const": "VOUCH_STARTED" }
+        }
+      },
+      "then": {
+        "required": ["voucherName", "voucherAddress"]
+      }
+    }
+  ]
+}
