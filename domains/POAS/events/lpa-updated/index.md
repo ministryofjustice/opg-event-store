@@ -12,6 +12,8 @@ owners:
   - vega
 ---
 
+<Admonition type="info">When this is sent to the Sirius development event bus, it is also sent to all ephemeral Sirius environments. This is because the dev and ephemeral environments all use the dev LPA Store to avoid complex duplication.</Admonition>
+
 ## Context
 
 The LPA has been signed and submitted.
