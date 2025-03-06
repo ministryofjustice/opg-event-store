@@ -38,7 +38,7 @@ In all cases, the relevant progress indicator in Sirius will be updated to refle
 
 If the state is **`SUCCESS`**, the identity check details will be added to the LPA Store record. (If the LPA has not been submitted, the information is held in Sirius until it is.)
 
-If the state is **`VOUCH_STARTED`**, Sirius will send a letter to the voucher once the LPA is submitted. (If the LPA has been submitted, the letter will be sent immediately.)
+If the state is **`VOUCH_STARTED`**, Sirius will send a letter to the donor once the LPA is submitted. (If the LPA has been submitted, the letter will be sent immediately.)
 
 <NodeGraph title="Consumer / Producer Diagram" />
 

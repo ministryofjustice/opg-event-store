@@ -2,7 +2,5 @@
   "time": "2024-05-19T15:06:29Z",
   "lpaUids": ["M-14HD-3J9F-FJ9K"],
   "actorType": "donor",
-  "state": "VOUCH_STARTED",
-  "voucherName": "Glennis Edgin",
-  "voucherAddress": ["3 Chestnut Close", "Cleveland", "Dorset", "GT87 1CH"]
+  "state": "VOUCH_STARTED"
 }
