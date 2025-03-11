@@ -12,7 +12,16 @@
     "requestType": {
       "type": "string",
       "description": "The type of reduction being requested",
-      "enum": ["HalfFee", "NoFee"]
+      "enum": ["HalfFee", "QuarterFee", "NoFee", "HardshipFee", "RepeatApplicationFee"]
+    },
+    "previousApplicationNumber": {
+      "type": "string",
+      "description": "The application number used for the previous application"
+    },
+    "previousFee": {
+      "type": "string",
+      "description": "The fee previously applied for",
+      "enum": ["Full", "Half", "Exemption", "Hardship"]
     },
     "evidence": {
       "type": "array",
@@ -38,11 +47,45 @@
       "enum": ["upload", "post"]
     }
   },
-  "if": {
-    "properties": {
-      "evidenceDelivery": { "const": "upload" }
+  "required": ["uid", "requestType", "evidenceDelivery"],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "evidenceDelivery": {
+            "const": "upload"
+          }
+        }
+      },
+      "then": {
+        "required": ["evidence"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "requestType": {
+            "const": "RepeatApplicationFee"
+          }
+        }
+      },
+      "then": {
+        "required": ["previousApplicationNumber"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "previousApplicationNumber": {
+            "type": "string",
+            "pattern": "^7"
+          }
+        },
+        "required": ["previousApplicationNumber"]
+      },
+      "then": {
+        "required": ["previousFee"]
+      }
     }
-  },
-  "then": { "required": ["uid", "requestType", "evidence", "evidenceDelivery"] },
-  "else": { "required": ["uid", "requestType", "evidenceDelivery"] }
+  ]
 }
