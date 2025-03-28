@@ -1,0 +1,61 @@
+---
+layout: layouts/fullwidth.njk
+---
+
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Event Store",
+      href: "/"
+    },
+    {
+      text: domain,
+      href: "/"+domain
+    },
+        {
+      text: "Events",
+      href: "/"+domain+'/events'
+    },
+    {
+      text: name,
+      href: "/"+domain+'/events/'+name
+    }
+  ]
+}) | safe }}
+<h1 class="govuk-heading-xl">{{ name }}
+  <strong class="govuk-tag govuk-tag--yellow">v{{ version }}</strong>
+</h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l ">Summary</h2>
+    {{ summary | markdownit | safe }}
+    {{ content | safe }} 
+     <h2 class="govuk-heading-l ">Examples </h2>
+    {% highlight "json" %}
+    {% include page.filePathStem | exampleFile  ignore missing %}
+    {% endhighlight %}
+     <h2 class="govuk-heading-l ">Schema </h2>
+     {% highlight "json" %}
+    {% include page.filePathStem | schemaFile  ignore missing %}
+    {% endhighlight %}
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Producers</h2>
+    {% for producer in producers %}
+      <strong class="govuk-tag govuk-tag--yellow govuk-tag--nowrap">{{ producer }}</strong>
+    {% endfor %}
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      Consumers
+    </h2>
+    {% for consumer in consumers %}
+      <strong class="govuk-tag govuk-tag--green govuk-tag--nowrap">{{ consumer }}</strong>
+    {% endfor %}
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      Owners
+    </h2>
+    {% for owner in owners %}
+      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap">{{ owner }}</strong>
+    {% endfor %}
+  </div>
+</div>

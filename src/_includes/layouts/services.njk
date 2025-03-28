@@ -1,0 +1,46 @@
+---
+layout: layouts/fullwidth.njk
+---
+
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Event Store",
+      href: "/"
+    },
+    {
+      text: "Services",
+      href: "/"+domain+'/events'
+    },
+    {
+      text: name,
+      href: "/services"
+    }
+  ]
+}) | safe }}
+<h1 class="govuk-heading-xl">{{ name }}
+</h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l ">{{summary}}</h2>
+    {{ content | safe }} 
+    
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Publishes Events</h2>
+   
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      Domain Owners
+    </h2>
+
+     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+     Repository
+    </h2>
+    <a href="{{repository.url}}" class="govuk-link">{{repository.url}}</a>
+     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+     Language
+    </h2>
+    {{repository.language | markdownit | safe}}
+  </div>
+</div>
