@@ -1,0 +1,21 @@
+---
+layout: layouts/fullwidth.njk
+---
+
+<h2 class="govuk-heading-l">Services ({{ collections.services | length }})</h2>
+{{ content| safe }}
+{% for service in collections.services %}
+  <div class="opg-event-block">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      <a href="{{ service.url }}" class="govuk-link">{{ service.data.name }} </a> 
+    </h2>
+    <p class="govuk-body-s">{{ service.data.summary }}</p>
+    <p class="	govuk-body-s">
+      <span class="opg-event-block__info">Subscribe Events:
+      </span>
+      <span class="opg-event-block__info">
+       Publish Events:
+      </span>
+    </p>
+  </div>
+{% endfor %}

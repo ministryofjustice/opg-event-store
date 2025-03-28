@@ -1,0 +1,14 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.sirius/certificate-provider-submission-completed.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.sirius/certificate-provider-submission-completed",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "^M(-[A-Z0-9]{4}){3}$"
+    }
+  },
+  "required": ["uid"]
+}
