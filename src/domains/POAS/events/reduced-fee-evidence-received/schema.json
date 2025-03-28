@@ -1,0 +1,13 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.sirius/reduced-fee-evidence-received.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.sirius/reduced-fee-evidence-received",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "description": "The path of the file in the S3 bucket. Does not include bucket name or leading slash."
+    }
+  },
+  "required": ["path"]
+}

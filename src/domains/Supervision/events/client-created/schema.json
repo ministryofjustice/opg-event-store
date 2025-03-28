@@ -1,0 +1,20 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/client-created.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/client-created",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "integer",
+      "description": "The client's ID"
+    },
+    "courtRef": {
+      "type": "string",
+      "description": "The client's court reference number"
+    }
+  },
+  "required": [
+    "clientId",
+    "courtRef"
+  ]
+}

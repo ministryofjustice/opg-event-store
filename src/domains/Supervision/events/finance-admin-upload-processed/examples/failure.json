@@ -1,0 +1,5 @@
+{
+  "emailAddress": "test@email.com",
+  "uploadType": "PAYMENTS_MOTO_CARD",
+  "failedLines": ["Line 1: Duplicate payment", "Line 5: Failed to parse date"]
+}

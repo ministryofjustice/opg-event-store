@@ -1,0 +1,18 @@
+{
+  "uid": "M-1234-5678-9012",
+  "createdAt": "2023-08-02T08:56:09.655503014Z",
+  "type": "hw",
+  "donor": {
+    "firstNames": "Jack",
+    "lastName": "Rubik",
+    "dob": "1938-03-18",
+    "address": {
+      "line1": "Flat 312",
+      "line2": "1 Scotland Street",
+      "line3": "Old Town",
+      "town": "Edinburgh",
+      "postcode": "N184EQ",
+      "country": "GB"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/payment-method-changed.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/payment-method-changed",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "integer",
+      "description": "The client's ID"
+    },
+    "paymentMethod": {
+      "type": "string",
+      "description": "The client's payment method"
+    }
+  },
+  "required": [
+    "clientId",
+    "paymentMethod"
+  ]
+}
