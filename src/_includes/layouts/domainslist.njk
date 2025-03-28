@@ -1,7 +1,19 @@
 ---
 layout: layouts/fullwidth.njk
 ---
-
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: site.name,
+      href: "/"
+    },
+    {
+      text: "Domains",
+      href: "/domains"
+    }
+  ]
+}) | safe }}
 <h2 class="govuk-heading-l">Domains ({{ collections.domains | length }})</h2>
 {{ content| safe }}
 {% for domain in collections.domains %}
