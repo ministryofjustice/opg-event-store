@@ -1,7 +1,18 @@
 ---
 layout: layouts/fullwidth.njk
 ---
-
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: site.name,
+      href: "/"
+    },
+    {
+      text: "Services"
+    }
+  ]
+}) | safe }}
 <h2 class="govuk-heading-l">Services ({{ collections.services | length }})</h2>
 {{ content| safe }}
 {% for service in collections.services %}
