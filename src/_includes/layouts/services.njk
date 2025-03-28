@@ -6,16 +6,15 @@ layout: layouts/fullwidth.njk
 {{ govukBreadcrumbs({
   items: [
     {
-      text: "Event Store",
+      text: site.name,
       href: "/"
     },
     {
-      text: "Services",
-      href: "/"+domain+'/events'
+      text: "Events",
+      href: "/events"
     },
     {
-      text: name,
-      href: "/services"
+      text: name
     }
   ]
 }) | safe }}
