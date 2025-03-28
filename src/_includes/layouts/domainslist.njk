@@ -1,0 +1,17 @@
+---
+layout: layouts/fullwidth.njk
+---
+
+<h2 class="govuk-heading-l">Domains ({{ collections.domains | length }})</h2>
+{{ content| safe }}
+{% for domain in collections.domains %}
+  <div class="opg-event-block">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      <a href="{{ domain.url }}" class="govuk-link">{{ domain.data.name }} </a> 
+    </h2>
+    <p class="govuk-body-s">{{ domain.data.summary }}</p>
+    <p class="	govuk-body-s">
+     
+    </p>
+  </div>
+{% endfor %}
