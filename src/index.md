@@ -13,4 +13,7 @@ title: OPG Digital Event Store
      <li>
         <a class="govuk-link" href="services">Services</a>
     </li>
+     <li>
+        <a class="govuk-link" href="domains">Domains</a>
+    </li>
 </ul>

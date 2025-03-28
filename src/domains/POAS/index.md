@@ -5,8 +5,7 @@ summary: |
 owners:
     - vega
     - mrlpa
+tags: domains
 ---
 
 An introduction to Power of Attorney Services
-
-<NodeGraph title="Domain Graph" />

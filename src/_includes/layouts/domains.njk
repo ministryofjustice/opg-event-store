@@ -1,0 +1,33 @@
+---
+layout: layouts/fullwidth.njk
+---
+
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Event Store",
+      href: "/"
+    },
+    {
+      text: "Domains",
+      href: "/domains"
+    }
+  ]
+}) | safe }}
+<h1 class="govuk-heading-xl">{{ name }}
+</h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l ">{{summary}}</h2>
+    {{ content | safe }} 
+    
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Owners</h2>
+  {% for owner in owners %}
+      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap">{{ owner }}</strong>
+    {% endfor %}
+    
+  </div>
+</div>
