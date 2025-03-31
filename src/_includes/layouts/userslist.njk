@@ -1,0 +1,32 @@
+---
+layout: layouts/fullwidth.njk
+---
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: site.name,
+      href: "/"
+    },
+    {
+      text: "users"
+    }
+  ]
+}) | safe }}
+<h2 class="govuk-heading-l">Users ({{ collections.users | length }})</h2>
+{{ content| safe }}
+{% for user in collections.users %}
+  <div class="opg-event-block">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      <a href="{{ user.url }}" class="govuk-link">{{ user.data.name }} </a> 
+    </h2>
+    <p class="govuk-body-s">{{ user.data.summary }}</p>
+    <p class="	govuk-body-s">
+      <span class="opg-event-block__info">Subscribe Events:
+      </span>
+      <span class="opg-event-block__info">
+       Publish Events:
+      </span>
+    </p>
+  </div>
+{% endfor %}
