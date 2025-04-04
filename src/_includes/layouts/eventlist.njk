@@ -27,7 +27,9 @@ layout: layouts/fullwidth.njk
       <span class="opg-event-block__info">
         Consumers: {{ events.data.consumers | length }}
       </span>
+      {% if events.data.domain %}
       <span class="opg-event-block__info">Domain: {{ events.data.domain }}</span>
+      {% endif %}
     </p>
   </div>
 {% endfor %}
