@@ -9,9 +9,13 @@ consumers:
   - opg.poas.makeregister
 owners:
   - mrlpa
+tags: events
 ---
 
-<Admonition type="warning">This event is internal to MRLPA</Admonition>
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>This event is internal to MRLPA</strong></div>
 
 ## Context
 

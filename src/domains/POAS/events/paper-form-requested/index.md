@@ -9,6 +9,7 @@ consumers:
   - opg.poas.sirius-proposed
 owners:
   - mrlpa
+tags: events
 ---
 
 ## Context

@@ -9,6 +9,7 @@ consumers:
   - opg.poas.sirius
 owners:
   - vega
+tags: events
 ---
 
 ## Context
