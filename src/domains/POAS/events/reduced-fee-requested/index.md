@@ -10,6 +10,7 @@ consumers:
 owners:
   - vega
   - mrlpa
+tags: events
 ---
 
 ## Context

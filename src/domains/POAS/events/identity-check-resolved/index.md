@@ -9,9 +9,13 @@ consumers:
   - opg.poas.sirius
 owners:
   - vega
+tags: events
 ---
 
-<Admonition type="alert">This event has been deprecated. Use <a href="../identity-check-updated/">identity-check-updated</a> instead</Admonition>
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>This event has been deprecated. Use <a href="../identity-check-updated/">identity-check-updated</a> instead</strong></div>
 
 ## Context
 

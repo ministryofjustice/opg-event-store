@@ -26,6 +26,10 @@ export default async function(eleventyConfig) {
       return '../../' + value.substring(0, slash) + '/schema.json'
     });
 
+    eleventyConfig.addFilter("owners", function (arr=[], match="") {
+      return arr?.filter(item => item.data.owners.includes(match))
+    });
+
     return {
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',

@@ -9,6 +9,7 @@ consumers:
   - opg.poas.use
 owners:
   - use
+tags: events
 ---
 
 ## Context

@@ -18,15 +18,8 @@ layout: layouts/fullwidth.njk
 {% for user in collections.users %}
   <div class="opg-event-block">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
-      <a href="{{ user.url }}" class="govuk-link">{{ user.data.name }} </a> 
+      <a href="{{ user.url }}" class="govuk-link"> {{ user.data.name }} </a> 
     </h2>
-    <p class="govuk-body-s">{{ user.data.summary }}</p>
-    <p class="	govuk-body-s">
-      <span class="opg-event-block__info">Subscribe Events:
-      </span>
-      <span class="opg-event-block__info">
-       Publish Events:
-      </span>
-    </p>
+    <p class="govuk-body-s">{{ user.summary }}</p>
   </div>
 {% endfor %}

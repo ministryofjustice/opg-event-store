@@ -10,6 +10,7 @@ consumers:
 owners:
   - vega
   - mrlpa
+tags: events
 ---
 
 ## Context
@@ -33,9 +34,12 @@ Therefore the trigger for the event may be one of:
 - The "review anomalies" task being completed (if the LPA has been paid for)
 - Payment being received (if anomalies are resolved)
 
-<Admonition type="info">
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
 The donor's identity check may not be complete, and the Restrictions and Conditions may still need to be reviewed
-</Admonition>
+</strong></div>>
 
 ## Effect
 
