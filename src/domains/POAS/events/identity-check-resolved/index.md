@@ -10,6 +10,7 @@ consumers:
 owners:
   - vega
 tags: events
+domain: POAS
 ---
 
 <div class="govuk-warning-text">
@@ -35,8 +36,8 @@ If the outcome was successful, it is added to the LPA Store record. (If the LPA 
 
 It the outcome was an exit, a note is added to the timeline stating the the ID check was incomplete.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

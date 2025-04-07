@@ -25,8 +25,8 @@ A caseworker has manually reviewed the changed data and identified it as a mater
 
 Depending on the state of the LPA a notification may be sent to all actors advising that the LPA cannot be registered or an actor can no longer remain part of the LPA. For example, an LPA with multiple attorneys would not be invalidated by a material change to an attorney as along as other valid attorneys remain part of the LPA. The MRLPA progress tracker is updated to show this.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

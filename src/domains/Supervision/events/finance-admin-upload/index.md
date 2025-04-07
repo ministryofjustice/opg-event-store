@@ -23,8 +23,8 @@ A payment report is uploaded.
 
 The finance hub API downloads the report from S3 and processes its payments.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

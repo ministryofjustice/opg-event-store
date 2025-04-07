@@ -23,8 +23,8 @@ An invoice is created in Sirius.
 
 Supervision Finance attempts to reapply any excess credit on account for the client whose debt position changed.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

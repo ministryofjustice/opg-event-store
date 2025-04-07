@@ -31,8 +31,8 @@ If evidence is being provided on paper, the task will become available in 10 bus
 
 If evidence is being provided online, the task is available instantly. Sirius creates a placeholder document record for each of the online files expected, and will receive a [reduced-fee-evidence-received](../reduced-fee-evidence-received) event when each arrives in S3.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

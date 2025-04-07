@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -29,8 +30,8 @@ If there are anomalies in the data, Sirius waits until a case worker has resolve
 
 MRLPA sends notifications to attorneys asking them to sign the LPA.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

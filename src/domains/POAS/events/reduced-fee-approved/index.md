@@ -27,8 +27,8 @@ A fee reduction record has been added in Sirius.
 
 The task list in MRLPA shows the payment task as completed if payment and approved reduction match, or asks for further payment if they do not (for example, if the donor applied for an exemption but was approved for a remission).
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

@@ -33,8 +33,8 @@ A file has finished being copied into Sirius's reduced fee evidence bucket.
 
 Sirius finds the placeholder document for the evidence, adds the uploaded file contents, and sets its retrieved date.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

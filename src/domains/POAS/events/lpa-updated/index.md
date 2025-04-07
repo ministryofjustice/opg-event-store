@@ -34,8 +34,8 @@ For Sirius this includes calculating progress indicators and detecting anomalies
 
 For MRLPA this includes updating the task list.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

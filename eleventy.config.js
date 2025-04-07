@@ -30,6 +30,10 @@ export default async function(eleventyConfig) {
       return arr?.filter(item => item.data.owners.includes(match))
     });
 
+    eleventyConfig.addFilter("producers", function (arr=[], match="") {
+      return arr?.filter(item => item.data.producers.includes(match))
+    });
+
     return {
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',

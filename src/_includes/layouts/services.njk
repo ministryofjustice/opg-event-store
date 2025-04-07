@@ -10,8 +10,8 @@ layout: layouts/fullwidth.njk
       href: "/"
     },
     {
-      text: "Events",
-      href: "/events"
+      text: "Services",
+      href: "/services"
     },
     {
       text: name
@@ -28,16 +28,22 @@ layout: layouts/fullwidth.njk
   </div>
   <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Publishes Events</h2>
-   
-    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+    {% for event in collections.events | producers(name) %} 
+   <strong class="govuk-tag govuk-tag--yellow govuk-tag--nowrap govuk-!-margin-bottom-1"><a href="{{event.url}}" class="opg-event-tag-link">{{event.data.name}}</a></strong>
+    {% endfor %}
+  
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
       Domain Owners
     </h2>
+  {% for owner in owners %}
+      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap">{{ owner }}</strong>
+    {% endfor %}
 
-     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+     <h2 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
      Repository
     </h2>
     <a href="{{repository.url}}" class="govuk-link">{{repository.url}}</a>
-     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+     <h2 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
      Language
     </h2>
     {{repository.language | markdownit | safe}}

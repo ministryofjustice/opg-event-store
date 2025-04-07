@@ -23,8 +23,8 @@ This does not mean the payment has arrived in OPG's bank account.
 
 Sirius fetches the payment details from GOV.UK Pay and stores a payment record in its database so the payment can be displayed in the UI.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

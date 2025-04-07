@@ -32,8 +32,8 @@ Sirius downloads the notification information and content from GOV.UK Notify and
 
 The notification is visible in the Documents tab of Sirius.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

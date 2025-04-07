@@ -10,7 +10,7 @@ consumers:
 owners:
   - vega
   - mrlpa
-tags: events
+domain: POAS
 ---
 
 ## Context
@@ -29,8 +29,8 @@ Sirius has ingested correspondence which it has identified<sup>[how?]</sup> as e
 
 The task list in MRLPA tells the user that their evidence has been received by the OPG.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

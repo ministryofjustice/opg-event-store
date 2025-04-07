@@ -24,8 +24,8 @@ The client's payment method is changed.
 
 Sirius Supervision creates a timeline event.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

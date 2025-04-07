@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -25,8 +26,8 @@ When a donor creates an application in MRLPA, or later updates their personal de
 
 Sirius uses the event to keep a copy of the donor's personal details as a Draft LPA. OPG staff can then search for the case in Sirius to provide support during the application process.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -25,8 +26,8 @@ When the LPA has been signed and witnessed by the certificate provider and payme
 
 Sirius can update its progress tracker to say that the "CP submission" and "CP identity check" progress indicators are "in progress".
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+
