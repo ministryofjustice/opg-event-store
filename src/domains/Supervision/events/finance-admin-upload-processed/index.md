@@ -23,8 +23,8 @@ A payment report is processed.
 
 An email is sent to the report's uploader describing its success, partial failure or full error, and the reason.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

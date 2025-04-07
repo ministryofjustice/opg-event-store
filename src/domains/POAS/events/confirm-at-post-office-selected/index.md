@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -25,8 +26,8 @@ identity.
 A donor selects in Make and Register that they intend to confirm their identity
 at a Post Office.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

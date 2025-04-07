@@ -10,6 +10,7 @@ consumers:
 owners:
   - vega
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -41,8 +42,8 @@ If the state is **`SUCCESS`**, the identity check details will be added to the L
 
 If the state is **`VOUCH_STARTED`**, Sirius will send a letter to the donor once the LPA is submitted. (If the LPA has been submitted, the letter will be sent immediately.)
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

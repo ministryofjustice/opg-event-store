@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -25,8 +26,8 @@ The certificate provider has attempted, and failed, to prove their identity with
 
 An email is sent to the donor advising them the certificate provider has failed their identity check, and they need to create a new LPA or register the LPA with the Court of Protection.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

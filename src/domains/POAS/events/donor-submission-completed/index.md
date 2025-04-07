@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -45,8 +46,8 @@ The donor's identity check may not be complete, and the Restrictions and Conditi
 
 MRLPA sends a notification to the Certificate Provider asking them to sign the LPA.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

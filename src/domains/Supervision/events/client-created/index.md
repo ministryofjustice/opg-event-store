@@ -23,8 +23,8 @@ A client is created.
 
 The supervision_finance.finance_client table is updated, setting the value of court_ref.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

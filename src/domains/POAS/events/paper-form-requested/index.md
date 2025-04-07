@@ -28,8 +28,8 @@ For the attorney: either the certificate provider has just completed their secti
 
 Sirius generates the form appropriate to the actor and sends it to them (either via GOV.UK Notify or Xerox). The `accessCode` provided in the event is included in the covering letter so that the actor can switch to the online channel.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

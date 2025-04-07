@@ -29,8 +29,8 @@ The donor confirms which type of LPA they want.
 
 MRLPA asynchronously gets a UID via the UID service and attaches it to the LPA. It then emits a [application-updated](../application-updated) event.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

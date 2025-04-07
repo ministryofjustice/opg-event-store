@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -27,8 +28,8 @@ The data the change relates to will up updated in the LPA store.
 
 Depending on the state of the LPA, and the actor that made the change, this could complete a task in MRLPA (e.g. identity mismatched details) or send notifications to actors advising the change was accepted. The MRLPA progress tracker is updated to reflect the change was accepted.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

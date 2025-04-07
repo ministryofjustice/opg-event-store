@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -27,8 +28,8 @@ Sirius sends the event when the letter asking for more information has been succ
 
 The task list in MRLPA shows a link to upload the further information.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

@@ -25,8 +25,8 @@ Sirius sends the event when the letter informing about the problem has been succ
 
 The task list in MRLPA will inform the donor that a letter has been sent that needs attention.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

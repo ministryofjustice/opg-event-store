@@ -27,8 +27,8 @@ A fee decision record with a "decline" outcome has been added in Sirius.
 
 The task list in MRLPA shows the payment task as declined and asks the donor to pay the full fee to continue.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

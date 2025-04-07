@@ -28,8 +28,8 @@ conditions being met which vary depending on what letter and to which recipient.
 
 Send the specified letter to the correspondent given.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

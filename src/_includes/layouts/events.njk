@@ -11,7 +11,7 @@ layout: layouts/fullwidth.njk
     },
     {
       text: domain,
-      href: "/"+domain
+      href: "/domains/"+domain
     },
         {
       text: "Events",
@@ -43,19 +43,25 @@ layout: layouts/fullwidth.njk
   <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Producers</h2>
     {% for producer in producers %}
-      <strong class="govuk-tag govuk-tag--yellow govuk-tag--nowrap">{{ producer }}</strong>
+      <strong class="govuk-tag govuk-tag--yellow govuk-tag--nowrap govuk-!-margin-bottom-1">
+        <a href="/services/{{producer}}" class="opg-event-tag-link">{{ producer }}</a>
+        </strong>
     {% endfor %}
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
       Consumers
     </h2>
     {% for consumer in consumers %}
-      <strong class="govuk-tag govuk-tag--green govuk-tag--nowrap">{{ consumer }}</strong>
+      <strong class="govuk-tag govuk-tag--green govuk-tag--nowrap  govuk-!-margin-bottom-1">
+         <a href="/services/{{consumer}}" class="opg-event-tag-link">
+         {{ consumer }}
+         </a>
+         </strong>
     {% endfor %}
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
       Owners
     </h2>
     {% for owner in owners %}
-      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap">{{ owner }}</strong>
+      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap  govuk-!-margin-bottom-1">{{ owner }}</strong>
     {% endfor %}
   </div>
 </div>

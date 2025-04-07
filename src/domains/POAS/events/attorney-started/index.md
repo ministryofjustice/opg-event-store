@@ -10,7 +10,7 @@ consumers:
 owners:
   - vega
   - mrlpa
-
+domain: POAS
 tags: events
 ---
 
@@ -25,9 +25,3 @@ When the certificate has been provided by the certificate provider and initial c
 ## Effect
 
 Sirius can update its progress tracker to say that the "Attorney signatures" progress indicator is "in progress".
-
-<NodeGraph title="Consumer / Producer Diagram" />
-
-<EventExamples />
-
-<Schema />

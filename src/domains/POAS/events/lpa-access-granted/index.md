@@ -24,8 +24,8 @@ Once the LPA has been registered
 
 The event will allow UaL to create a record in order to associate the newly registered LPA with accounts we hold
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

@@ -11,6 +11,7 @@ owners:
   - vega
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 ## Context
@@ -25,8 +26,8 @@ When the identity check returns data that does not match the expected data that 
 
 Sirius provides this data to caseworkers so that they can manually check whether the change of data makes a material or immaterial difference.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+

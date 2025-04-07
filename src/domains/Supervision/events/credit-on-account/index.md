@@ -24,8 +24,8 @@ A client's credit balance is larger than their outstanding debt position.
 
 Sirius Supervision creates a Refund Review task on the client.
 
-<NodeGraph title="Consumer / Producer Diagram" />
 
-<EventExamples />
 
-<Schema />
+
+
+
