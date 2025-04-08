@@ -15,6 +15,7 @@ layout: layouts/fullwidth.njk
 }) | safe }}
 <h2 class="govuk-heading-l">Services ({{ collections.services | length }})</h2>
 {{ content| safe }}
+<div class="opg-event-wrapper">
 {% for service in collections.services %}
   <div class="opg-event-block">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
@@ -30,3 +31,4 @@ layout: layouts/fullwidth.njk
     </p>
   </div>
 {% endfor %}
+</div>

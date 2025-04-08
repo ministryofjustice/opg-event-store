@@ -4,6 +4,11 @@
     max-width: none;
 }
 
+.opg-event-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .opg-event-block {
     border-left: 3px solid rgb(29, 112, 184);
     padding: 0.7rem 1rem;

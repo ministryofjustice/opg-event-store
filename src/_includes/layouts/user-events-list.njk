@@ -15,6 +15,7 @@ layout: layouts/fullwidth.njk
 }) | safe }}
 <h2 class="govuk-heading-l">Events owned by {{name}}</h2>
 {{ content| safe }}
+<div class="opg-event-wrapper">
 {% for event in collections.events | owners(url) %} 
   <div class="opg-event-block">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
@@ -31,3 +32,4 @@ layout: layouts/fullwidth.njk
     </p>
   </div>
 {% endfor %}
+</div>

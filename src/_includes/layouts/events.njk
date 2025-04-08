@@ -61,7 +61,11 @@ layout: layouts/fullwidth.njk
       Owners
     </h2>
     {% for owner in owners %}
-      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap  govuk-!-margin-bottom-1">{{ owner }}</strong>
+      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap  govuk-!-margin-bottom-1">
+          <a href="/users/{{owner}}" class="opg-event-tag-link">
+            {{ owner }}
+            </a>
+      </strong>
     {% endfor %}
   </div>
 </div>
