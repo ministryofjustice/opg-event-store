@@ -15,6 +15,7 @@ layout: layouts/fullwidth.njk
 }) | safe }}
 <h2 class="govuk-heading-l">Users ({{ collections.users | length }})</h2>
 {{ content| safe }}
+<div class="opg-event-wrapper">
 {% for user in collections.users %}
   <div class="opg-event-block">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
@@ -23,3 +24,4 @@ layout: layouts/fullwidth.njk
     <p class="govuk-body-s">{{ user.summary }}</p>
   </div>
 {% endfor %}
+</div>

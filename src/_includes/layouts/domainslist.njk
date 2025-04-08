@@ -16,6 +16,7 @@ layout: layouts/fullwidth.njk
 }) | safe }}
 <h2 class="govuk-heading-l">Domains ({{ collections.domains | length }})</h2>
 {{ content| safe }}
+<div class="opg-event-wrapper">
 {% for domain in collections.domains %}
   <div class="opg-event-block">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
@@ -27,3 +28,4 @@ layout: layouts/fullwidth.njk
     </p>
   </div>
 {% endfor %}
+</div>
