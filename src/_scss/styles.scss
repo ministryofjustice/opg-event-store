@@ -26,6 +26,17 @@
     color:inherit;
 }
 
+#cy {
+    width: 100%;
+    height: 30em;
+    display: block;
+    border: 1px solid gray;
+  }
+
+  .govuk-header__menu-button{
+    display:none;
+  }
+
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/

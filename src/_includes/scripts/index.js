@@ -120,3 +120,76 @@ function setupGoogleAnalytics(analyticsId) {
 }
 
 init();
+
+function eventGraph(source, event, consumer){
+
+  var elements = [ // list of graph elements
+    {  
+      data: { id: 'b', name: event }
+    }
+  ]
+  source.forEach((source_item, index) => {
+    elements.push({  
+      data: { id: 'a'+index , name:source_item, producer:true}
+    })
+    elements.push({ 
+      data: { id: 'a'+index+'b', source: 'a'+index, target: 'b' , name:"produces"}
+    })
+  });
+
+  consumer.forEach((consumed_item, index)=>{
+    elements.push({
+      data: { id: 'c'+index, name: consumer, consumer:true}
+    })
+    elements.push({ 
+      data: { id: 'bc'+index, source: 'b', target: 'c'+index , name:'consumes'}
+    })
+    
+  })
+
+  var cy = cytoscape({
+    container: document.getElementById('cy'),
+    
+    elements: elements,
+  
+    style: [ // the stylesheet for the graph
+      {
+        selector: 'node',
+        style: {
+          'background-color': '#666',
+          'color':'white',
+          'label': 'data(name)',
+          "text-valign" : "center",
+          "text-halign" : "center",
+          'width':'label',
+          'height':'label',
+          'shape':'round-rectangle',
+          'padding':'7px'
+          }
+      },
+      { selector:'[producer]',  style: {'background-color':'#28a197'}},
+       { selector:'#b',  style: {'background-color':' #1d70b8'}},
+     
+      { selector:'[consumer]',  style: {'background-color':'#00703c'}},
+        
+      {
+        selector: 'edge',
+        style: {
+          'width': 3,
+          'line-color': '#ccc',
+          'target-arrow-color': '#ccc',
+          'target-arrow-shape': 'triangle',
+          'curve-style': 'bezier',
+          'line-style':'dashed',
+          'label': 'data(name)',
+          'color': '#666'
+        }
+      }
+    ],
+  
+    layout: {
+      name: 'concentric',
+    }
+  
+  });
+}

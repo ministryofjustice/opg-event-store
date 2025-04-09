@@ -9,6 +9,8 @@ consumers:
   - opg.supervision.sirius
 owners:
   - supervision
+domain: supervision 
+tags: events  
 ---
 
 ## Context

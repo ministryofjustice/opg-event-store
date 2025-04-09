@@ -10,6 +10,7 @@ consumers:
 owners:
   - use
 tags: events
+domain: POAS
 ---
 
 ## Context
