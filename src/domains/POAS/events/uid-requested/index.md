@@ -10,6 +10,7 @@ consumers:
 owners:
   - mrlpa
 tags: events
+domain: POAS
 ---
 
 <div class="govuk-warning-text">

@@ -10,6 +10,7 @@ consumers:
 owners:
   - vega
 tags: events
+domain: POAS
 ---
 
 <div class="govuk-warning-text">

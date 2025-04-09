@@ -5,7 +5,7 @@ title: OPG Digital Event Store
 ---
 
 <h1 class="govuk-heading-xl">{{site.name}}</h1>
-
+<p class="govuk-body-l">This site is documentation for the events produced by the various software systems of OPG Digital</p>
 <ul class="govuk-list govuk-list--bullet">
     <li>
         <a class="govuk-link" href="events">Events</a>

@@ -9,6 +9,8 @@ consumers:
   - opg.supervision.finance.admin
 owners:
   - supervision
+domain: supervision 
+tags: events  
 ---
 
 ## Context
