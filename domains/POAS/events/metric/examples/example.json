@@ -3,7 +3,7 @@
     "Project": "MRLPA",
     "Category": "metric",
     "Subcategory": "FunnelCompletionRate",
-    "Environment": "1186",
+    "Environment": "demo",
     "MeasureName": "DONORJOURNEYCOMPLETED",
     "MeasureValue": "1",
     "MeasureValueType": "BIGINT",

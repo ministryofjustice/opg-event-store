@@ -4,7 +4,6 @@ version: 0.0.1
 summary: |
   An event has occurred that increments a metric
 producers:
-  - opg.poas.sirius-proposed
   - opg.poas.makeregister
   - opg.poas.lpastore
 consumers:
