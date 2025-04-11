@@ -1,5 +1,7 @@
 import markdownit from './src/_includes/util/markdown-it.js'
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+
 
 export default async function(eleventyConfig) {
 	// Configure Eleventy
@@ -8,6 +10,12 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ 'src/_includes/scripts': 'assets' });
 
     eleventyConfig.addPlugin(syntaxHighlight);
+
+    //Pull in path prefix if building for GH Pages
+    //TODO remove when moved to org url
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
+      baseHref: process.env.BASE_PATH || eleventyConfig.pathPrefix
+    });
 
     //switch to GDS markdown by default
     eleventyConfig.setLibrary("md", markdownit());
