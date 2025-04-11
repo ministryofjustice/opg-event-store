@@ -19,7 +19,7 @@ An event has occurred that increments a metric.
 
 ## Trigger
 
-An event that is to be monitored and measured. 1 event per metrics.
+An event that is to be monitored and measured. Up to 20 metrics per event.
 
 ## Effect
 
