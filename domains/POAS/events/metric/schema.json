@@ -4,14 +4,24 @@
   "title": "opg.poas.makeregister/metric",
   "type": "object",
   "properties": {
+    "Project": {
+      "type": "string",
+      "description": "The service or project name",
+      "pattern": "^[a-zA-Z-_0-9]{1,32}$"
+    },
+    "Category": {
+      "type": "string",
+      "description": "Assign metric a Category",
+      "pattern": "^[a-zA-Z-_0-9]{1,25}$"
+    },
     "Subcategory": {
       "type": "string",
-      "description": "Assign metric a Subcategory (Optional)",
+      "description": "Assign metric a Subcategory",
       "pattern": "^[a-zA-Z-_0-9]{1,25}$"
     },
     "Environment": {
       "type": "string",
-      "description": "Sets the environment the metric has come from (Optional)",
+      "description": "Sets the environment the metric has come from",
       "pattern": "^[a-zA-Z-_0-9]{1,25}$"
     },
     "MeasureName": {
@@ -35,5 +45,5 @@
       "pattern": "^[0-9]{13}$"
     }
   },
-  "required": ["Subcategory", "Environment", "MeasureName", "MeasureValue", "Time"]
+  "required": ["Project", "Category", "Subcategory", "Environment", "MeasureName", "MeasureValue", "Time"]
 }
