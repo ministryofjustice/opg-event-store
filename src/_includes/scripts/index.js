@@ -124,12 +124,13 @@ init();
 
 var depth = 0;
 const STEP=60;
-function addEventToGraph(graph, producers, event, consumers){
+function addEventToGraph(graph, producers, event, consumers, spacing){
   const event_name = 'event-'+event
+  spacing = spacing || 200;
 
   graph.add({  
     data: { id:event_name , name: event, event:true },
-    position:{x: 400, y: depth}
+    position:{x: (spacing*2), y: depth}
   })
   depth+=STEP;
   var producer_count=0;
@@ -160,7 +161,7 @@ function addEventToGraph(graph, producers, event, consumers){
     if(!graph.getElementById(consumer_name).length){
       graph.add({
         data: { id: consumer_name, name: consumed_item, consumer:true},
-        position:{x: 800, y: depth}
+        position:{x: (spacing*4), y: depth}
       })
         depth+=STEP;
     }

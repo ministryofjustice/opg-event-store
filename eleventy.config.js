@@ -14,7 +14,7 @@ export default async function(eleventyConfig) {
     //Pull in path prefix if building for GH Pages
     //TODO remove when moved to org url
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
-      baseHref: process.env.BASE_PATH || eleventyConfig.pathPrefix
+      base: process.env.BASE_PATH || eleventyConfig.pathPrefix
     });
 
     //switch to GDS markdown by default
