@@ -42,12 +42,16 @@ layout: layouts/fullwidth.njk
 
 <h2 class="govuk-heading-l ">Event Flow</h2>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.0/cytoscape.min.js" integrity="sha512-zHc90yHSbkgx0bvVpDK/nVgxANlE+yKN/jKy91tZ4P/vId8AL7HyjSpZqHmEujWDWNwxYXcfaLdYWjAULl35MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><div id="cy"></div>
-<div id="cy"></div>
+
 <script defer>
   document.addEventListener("DOMContentLoaded",function(){
-   var graph = eventGraph()
-   addEventToGraph(graph, {{ producers | dump  | safe}}, "{{ name }}", {{ consumers | dump | safe }})
-   reRenderGraph(graph, 'concentric')
+      var graph = eventGraph()
+      var layout = graph.layout({name:'breadthfirst', grid:true})
+      addEventToGraph(graph, {{ producers | dump  | safe}}, "{{ name }}", {{ consumers | dump | safe }}, 100)
+        graph.zoom({
+        level: 0.8, // the zoom level
+        renderedPosition: { x: 600, y: 1000 }
+        });
   })
  
 
