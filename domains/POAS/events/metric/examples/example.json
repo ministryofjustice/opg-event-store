@@ -1,0 +1,28 @@
+{
+  "metrics": [
+    {
+      "metric": {
+        "Project": "MRLPA",
+        "Category": "metric",
+        "Subcategory": "FunnelCompletionRate",
+        "Environment": "demo",
+        "MeasureName": "DONORJOURNEYCOMPLETED",
+        "MeasureValue": "1",
+        "MeasureValueType": "BIGINT",
+        "Time": "1744275915000"
+      }
+    },
+    {
+      "metric": {
+        "Project": "MRLPA",
+        "Category": "metric",
+        "Subcategory": "FunnelCompletionRate",
+        "Environment": "demo",
+        "MeasureName": "DONORJOURNEYCOMPLETED",
+        "MeasureValue": "1",
+        "MeasureValueType": "BIGINT",
+        "Time": "1744275916000"
+      }
+    }
+  ]
+}
