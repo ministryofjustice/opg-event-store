@@ -16,4 +16,10 @@ title: OPG Digital Event Store
      <li>
         <a class="govuk-link" href="domains">Domains</a>
     </li>
+     <li>
+        <a class="govuk-link" href="users">Users</a>
+    </li>
+     <li>
+        <a class="govuk-link" href="visualiser">Visualiser</a>
+    </li>
 </ul>
