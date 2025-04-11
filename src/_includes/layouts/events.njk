@@ -41,14 +41,13 @@ layout: layouts/fullwidth.njk
     {% endhighlight %}
 
 <h2 class="govuk-heading-l ">Event Flow</h2>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.2/cytoscape.min.js" integrity="sha512-Rjwq+hpL29wg7pieBf5SnXryZHHVSPZ75BtfgoBQJWvFOeh2j34AmAObOri1S51J1MdrW/gesC1kBejhOzvU6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.0/cytoscape.min.js" integrity="sha512-zHc90yHSbkgx0bvVpDK/nVgxANlE+yKN/jKy91tZ4P/vId8AL7HyjSpZqHmEujWDWNwxYXcfaLdYWjAULl35MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><div id="cy"></div>
 <div id="cy"></div>
 <script defer>
-  var source={{ producers | dump  | safe}}
-  var event="{{ name }}"
-  var consumer={{ consumers | dump | safe }}
   document.addEventListener("DOMContentLoaded",function(){
-   eventGraph(source, event, consumer)
+   var graph = eventGraph()
+   addEventToGraph(graph, {{ producers | dump  | safe}}, "{{ name }}", {{ consumers | dump | safe }})
+   reRenderGraph(graph, 'concentric')
   })
  
 
