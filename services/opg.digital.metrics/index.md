@@ -3,7 +3,7 @@ name: opg.digital.metrics
 summary: |
   OPG's Metrics system
 owners:
-    - supervision
+    - POAS
 repository:
   language: HCL
   url: https://github.com/ministryofjustice/opg-metrics
