@@ -1,16 +1,12 @@
 {
-  "metrics": [
-    {
-    "metric": {
-      "Project": "ModernisingLPA",
-      "Category": "MRLPA",
-      "Subcategory": "FunnelCompletionRate",
-      "Environment": "1186",
-      "MeasureName": "DonorJourneyCompleted",
-      "MeasureValue": "1",
-      "MeasureValueType": "BIGINT",
-      "Time": "1744275915000"
-      }
-    }
-  ]
+  "metric": {
+    "Project": "ModernisingLPA",
+    "Category": "MRLPA",
+    "Subcategory": "FunnelCompletionRate",
+    "Environment": "1186",
+    "MeasureName": "DonorJourneyCompleted",
+    "MeasureValue": "1",
+    "MeasureValueType": "BIGINT",
+    "Time": "1744275915000"
+  }
 }
