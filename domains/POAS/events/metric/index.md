@@ -6,6 +6,7 @@ summary: |
 producers:
   - opg.poas.sirius-proposed
   - opg.poas.makeregister
+  - opg.poas.lpastore
 consumers:
   - opg.digital.metrics
 owners:
