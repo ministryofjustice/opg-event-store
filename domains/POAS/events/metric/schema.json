@@ -44,7 +44,7 @@
         },
         "Time": {
           "type": "string",
-          "description": "The type of LPA being created",
+          "description": "A 13 digit timestamp of the metrics event",
           "pattern": "^[0-9]{13}$"
         }
       },
