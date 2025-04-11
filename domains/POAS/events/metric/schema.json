@@ -35,5 +35,5 @@
       "pattern": "^[0-9]{13}$"
     }
   },
-  "required": ["Project", "MeasureName", "MeasureValue", "Time"]
+  "required": ["Subcategory", "Environment", "MeasureName", "MeasureValue", "Time"]
 }
