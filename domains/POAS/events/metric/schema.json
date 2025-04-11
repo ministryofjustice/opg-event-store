@@ -6,15 +6,18 @@
   "properties": {
     "Subcategory": {
       "type": "string",
-      "description": "Assign metric a Subcategory (Optional)"
+      "description": "Assign metric a Subcategory (Optional)",
+      "pattern": "^[a-zA-Z-_0-9]{1,25}$"
     },
     "Environment": {
       "type": "string",
-      "description": "Sets the environment the metric has come from (Optional)"
+      "description": "Sets the environment the metric has come from (Optional)",
+      "pattern": "^[a-zA-Z-_0-9]{1,25}$"
     },
     "MeasureName": {
       "type": "string",
-      "description": "The metric name"
+      "description": "The metric name",
+      "pattern": "^[a-zA-Z-_0-9]{1,64}$"
     },
     "MeasureValue": {
       "type": "string",

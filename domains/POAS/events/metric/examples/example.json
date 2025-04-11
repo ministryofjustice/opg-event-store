@@ -1,7 +1,7 @@
 {
-  "Subcategory": "Funnel Completion Rate",
+  "Subcategory": "FunnelCompletionRate",
   "Environment": "1186",
-  "MeasureName": "Donor Journey Completed",
+  "MeasureName": "DonorJourneyCompleted",
   "MeasureValue": "1",
   "MeasureValueType": "BIGINT",
   "Time": "1744275915000"
