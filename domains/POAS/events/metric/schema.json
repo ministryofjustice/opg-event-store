@@ -1,24 +1,39 @@
 {
-  "$id": "https://opg.service.justice.gov.uk/opg.poas.lpastore/material-change-confirmed.json",
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.makeregister/metric.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "opg.poas.lpastore/material-change-confirmed",
+  "title": "opg.poas.makeregister/metric",
   "type": "object",
   "properties": {
-    "uid": {
+    "Subcategory": {
       "type": "string",
-      "description": "The UID of the LPA",
-      "pattern": "^M(-[A-Z0-9]{4}){3}$"
+      "description": "Assign metric a Subcategory (Optional)",
+      "pattern": "^[a-zA-Z-_0-9]{1,25}$"
     },
-    "actorType": {
+    "Environment": {
       "type": "string",
-      "description": "The type of actor that made the change",
-      "enum": ["donor", "certificateProvider", "attorney"]
+      "description": "Sets the environment the metric has come from (Optional)",
+      "pattern": "^[a-zA-Z-_0-9]{1,25}$"
     },
-    "actorUID": {
+    "MeasureName": {
       "type": "string",
-      "description": "The UID of the actor that made the change",
-      "pattern": "^([a-z0-9]{8}-)([a-z0-9]{4}-){3}([a-z0-9]{12})$"
+      "description": "The metric name",
+      "pattern": "^[a-zA-Z-_0-9]{1,64}$"
+    },
+    "MeasureValue": {
+      "type": "string",
+      "description": "The metric value",
+      "pattern": "^[0-9]{1,20}$"
+    },
+    "MeasureValueType": {
+      "type": "string",
+      "description": "The metric value type",
+      "enum": ["DOUBLE", "BIGINT", "VARCHAR", "BOOLEAN"]
+    },
+    "Time": {
+      "type": "string",
+      "description": "The type of LPA being created",
+      "pattern": "^[0-9]{13}$"
     }
   },
-  "required": ["uid", "actorType", "actorUID"]
+  "required": ["Project", "MeasureName", "MeasureValue", "Time"]
 }
