@@ -1,0 +1,37 @@
+---
+layout: layouts/fullwidth.njk
+---
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: site.name,
+      href: "/"
+    },
+    {
+      text: "Events"
+    }
+  ]
+}) | safe }}
+<h2 class="govuk-heading-l">Events ({{ collections.events | length }})</h2>
+{{ content| safe }}
+<div class="opg-event-wrapper">
+{% for events in collections.events %}
+  <div class="opg-event-block">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      <a href="{{ events.url }}" class="govuk-link">{{ events.data.name }} </a>  <strong class="govuk-tag govuk-tag--yellow" style="float:right">v{{ events.data.version }}</strong>
+    </h2>
+    <p class="govuk-body-s">{{ events.data.summary }}</p>
+    <p class="	govuk-body-s">
+      <span class="opg-event-block__info">Producers: {{ events.data.producers | length }}
+      </span>
+      <span class="opg-event-block__info">
+        Consumers: {{ events.data.consumers | length }}
+      </span>
+      {% if events.data.domain %}
+      <span class="opg-event-block__info">Domain: {{ events.data.domain }}</span>
+      {% endif %}
+    </p>
+  </div>
+{% endfor %}
+</div>

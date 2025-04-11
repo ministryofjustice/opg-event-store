@@ -1,0 +1,21 @@
+---
+layout: layouts/fullwidth.njk
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.0/cytoscape.min.js" integrity="sha512-zHc90yHSbkgx0bvVpDK/nVgxANlE+yKN/jKy91tZ4P/vId8AL7HyjSpZqHmEujWDWNwxYXcfaLdYWjAULl35MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><div id="cy"></div>
+<script defer>
+
+  document.addEventListener("DOMContentLoaded",function(){
+   var graph = eventGraph()
+   var layout = graph.layout({name:'breadthfirst', grid:true})
+
+    {% for event in collections.events %}
+   addEventToGraph(graph, {{ event.data.producers | dump  | safe}}, "{{ event.data.name }}", {{ event.data.consumers | dump | safe }})
+   {% endfor %}
+  graph.zoom({
+  level: 0.7, // the zoom level
+  renderedPosition: { x: 600, y: 200 }
+  });
+  })
+
+</script>
