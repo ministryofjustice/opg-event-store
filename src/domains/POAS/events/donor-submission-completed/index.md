@@ -40,7 +40,7 @@ Therefore the trigger for the event may be one of:
   <strong class="govuk-warning-text__text">
     <span class="govuk-visually-hidden">Warning</span>
 The donor's identity check may not be complete, and the Restrictions and Conditions may still need to be reviewed
-</strong></div>>
+</strong></div>
 
 ## Effect
 
