@@ -24,9 +24,11 @@ layout: layouts/fullwidth.njk
     <p class="govuk-body-s">{{ service.data.summary }}</p>
     <p class="	govuk-body-s">
       <span class="opg-event-block__info">Subscribe Events:
+        {{ collections.events | consumers(service.data.name) | length }}
       </span>
       <span class="opg-event-block__info">
        Publish Events:
+        {{ collections.events | producers(service.data.name) | length }}
       </span>
     </p>
   </div>

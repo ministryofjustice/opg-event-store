@@ -42,6 +42,14 @@ export default async function(eleventyConfig) {
       return arr?.filter(item => item.data.producers.includes(match))
     });
 
+    eleventyConfig.addFilter("consumers", function (arr=[], match="") {
+      return arr?.filter(item => item.data.consumers.includes(match))
+    });
+
+     eleventyConfig.addFilter("domain", function (arr=[], match="") {
+      return arr?.filter(item => item.data.domain.includes(match))
+    });
+
     return {
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',

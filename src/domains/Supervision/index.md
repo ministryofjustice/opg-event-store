@@ -1,5 +1,5 @@
 ---
-name: Supervision
+name: supervision
 summary: |
   Supervision domain
 owners:

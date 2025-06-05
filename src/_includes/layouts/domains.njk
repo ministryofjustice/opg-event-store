@@ -19,19 +19,37 @@ layout: layouts/fullwidth.njk
 
   ]
 }) | safe }}
-<h1 class="govuk-heading-xl">{{ name }}
+<h1 class="govuk-heading-xl">{{ name | capitalize}}
 </h1>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-l ">{{summary}}</h2>
-    {{ content | safe }} 
-    
+    <h2 class="govuk-heading-l ">{{ summary }}</h2>
+    {{ content | safe }}
+    {% for events in collections.events | domain(name) %}
+      <div class="opg-event-block">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+          <a href="{{ events.url }}" class="govuk-link">{{ events.data.name }}
+          </a>
+          <strong class="govuk-tag govuk-tag--yellow" style="float:right">v{{ events.data.version }}</strong>
+        </h2>
+        <p class="govuk-body-s">{{ events.data.summary }}</p>
+        <p class="	govuk-body-s">
+          <span class="opg-event-block__info">Producers: {{ events.data.producers | length }}
+          </span>
+          <span class="opg-event-block__info">
+            Consumers: {{ events.data.consumers | length }}
+          </span>
+          {% if events.data.domain %}
+            <span class="opg-event-block__info">Domain: {{ events.data.domain }}</span>
+          {% endif %}
+        </p>
+      </div>
+    {% endfor %}
   </div>
   <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Owners</h2>
-  {% for owner in owners %}
+    {% for owner in owners %}
       <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap">{{ owner }}</strong>
     {% endfor %}
-    
   </div>
 </div>
