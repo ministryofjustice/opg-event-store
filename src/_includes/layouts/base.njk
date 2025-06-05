@@ -25,6 +25,8 @@
   </head>
   <body class="govuk-template__body">
     {%- from "../macros/header.njk" import govukHeader %}
+    {%- from "../../../node_modules/govuk-frontend/dist/govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
     {%- from "../macros/footer.njk" import govukFooter %}
     {%- from "../../../node_modules/govuk-frontend/dist/govuk/components/skip-link/macro.njk" import govukSkipLink %}
     {%- from "../../../node_modules/govuk-frontend/dist/govuk/components/back-link/macro.njk" import govukBackLink %}
@@ -38,9 +40,35 @@
             serviceName: site.name,
             serviceUrl: "/",
             phase: site.phase,
-            navigation: []
+            navigation: [],
+            classes: "govuk-header--full-width-border"
           })
         }}
+
+        {{ govukServiceNavigation({
+          navigation: [
+            {
+              href: "/events",
+              text: "Events"
+            },
+               {
+              href: "/services",
+              text: "Services"
+            },
+            {
+              href: "/domains",
+              text: "Domains"
+            },
+            {
+              href: "/users",
+              text: "Users"
+            },
+            {
+              href: "/visualiser",
+              text: "Visualiser"
+            }
+          ]
+        }) }}
 
         {% block content %}
         <div id="content" class="govuk-width-container">
