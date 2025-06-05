@@ -28,5 +28,7 @@ jobs:
         run: npm run test
 
       - name: Check build possible
+        env:
+            BASE_PATH: /opg-event-store
         if: ${{ github.event_name == 'pull_request' }}
         run: npm run build
