@@ -23,6 +23,6 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "@eventcatalog/core": "^1.2.7"
+    "@eventcatalog/core": "^2.34.7"
   }
 }
