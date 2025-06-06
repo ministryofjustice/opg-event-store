@@ -1,5 +1,7 @@
 ---
 layout: layouts/fullwidth.njk
+eleventyComputed:
+    title: "Events owned by {{ name }}"
 ---
 {% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {{ govukBreadcrumbs({
@@ -9,14 +11,18 @@ layout: layouts/fullwidth.njk
       href: "/"
     },
     {
-      text: "event"
+      text: "Users",
+      href: "/users"
+    },
+    {
+      text: name
     }
   ]
 }) | safe }}
-<h2 class="govuk-heading-l">Events owned by {{name}}</h2>
+<h1 class="govuk-heading-l">Events owned by {{name}}</h2>
 {{ content| safe }}
 <div class="opg-event-wrapper">
-{% for event in collections.events | owners(url) %} 
+{% for event in collections.events | owners(url) %}
   <div class="opg-event-block">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
       <a href="{{ event.url }}" class="govuk-link">{{ event.data.name }} </a>  <strong class="govuk-tag govuk-tag--yellow" style="float:right">v{{ event.data.version }}</strong>

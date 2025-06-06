@@ -19,14 +19,16 @@ An offline identity check can be a distributed, asynchronous process. In order f
 
 In a happy path journey, an identity check may immediately go to `SUCCESS`. But it may also go through several steps to get there, as shown in the following example:
 
-<Mermaid title="Example complex identity check status journey" charts={[`
-flowchart LR
-  X(Start)-->EXIT
-  EXIT-->COUNTER_SERVICE_STARTED
-  COUNTER_SERVICE_STARTED-->FAILURE
-  FAILURE-->VOUCH_STARTED
-  VOUCH_STARTED-->SUCCESS
-`]} />
+1. EXIT
+    - The donor finds out they are not able to complete the check over the phone
+1. COUNTER_SERVICE_STARTED
+    - The donor instead chooses to use counter service
+1. FAILURE
+    - The counter service check fails
+1. VOUCH_STARTED
+    - The donor instead elects someone to voucher for them
+1. SUCCESS
+    - The voucher vouches for the donor's identity
 
 ## Trigger
 
@@ -41,9 +43,3 @@ In all cases, the relevant progress indicator in Sirius will be updated to refle
 If the state is **`SUCCESS`**, the identity check details will be added to the LPA Store record. (If the LPA has not been submitted, the information is held in Sirius until it is.)
 
 If the state is **`VOUCH_STARTED`**, Sirius will send a letter to the donor once the LPA is submitted. (If the LPA has been submitted, the letter will be sent immediately.)
-
-
-
-
-
-
