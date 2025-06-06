@@ -10,5 +10,3 @@ repository:
 ---
 
 > The Metrics system is a collection of AWS managed resources that include Amazon Managed Kinesis, Amazon Managed Grafana and an API Gateway endpoint.
-
-<NodeGraph />

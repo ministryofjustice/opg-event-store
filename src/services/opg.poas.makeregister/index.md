@@ -17,5 +17,3 @@ The project aims to:
 - increase safeguards for the donor
 - improve the process of making and registering an LPA for donors, attorneys and third parties
 - achieve sustainability for OPG whilst keeping LPAs as affordable as possible for all people in society
-
-<NodeGraph />

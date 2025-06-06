@@ -11,5 +11,3 @@ tags: services
 ---
 
 > Allows the actors to use and share their LPAs
-
-<NodeGraph />
