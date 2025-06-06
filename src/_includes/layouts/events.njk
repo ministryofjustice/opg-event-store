@@ -28,11 +28,18 @@ eleventyComputed:
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l ">Summary</h2>
     {{ summary | markdownit | safe }}
-    {{ content | safe }} 
-     <h2 class="govuk-heading-l ">Examples </h2>
-    {% highlight "json" %}
-    {% include page.filePathStem | exampleFile  ignore missing %}
-    {% endhighlight %}
+    {{ content | safe }}
+
+    {% set exampleFiles = page.filePathStem | listExampleFiles %}
+    {% if exampleFiles|length > 0 %}
+      <h2 class="govuk-heading-l ">Examples </h2>
+      {% for filename in exampleFiles %}
+        {% highlight "json" %}
+        {%- include page.filePathStem | exampleFile(filename) -%}
+        {% endhighlight %}
+      {% endfor %}
+    {% endif %}
+
      <h2 class="govuk-heading-l ">Schema </h2>
      {% highlight "json" %}
     {% include page.filePathStem | schemaFile  ignore missing %}
@@ -51,7 +58,7 @@ eleventyComputed:
         renderedPosition: { x: 600, y: 1000 }
         });
   })
- 
+
 
 </script>
   </div>
