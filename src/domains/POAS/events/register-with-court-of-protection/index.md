@@ -1,6 +1,5 @@
 ---
 name: register-with-court-of-protection
-version: 0.0.1
 summary: |
   Donor opts to take their LPA to the Court of Protection
 producers:

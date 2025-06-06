@@ -1,6 +1,5 @@
 ---
 name: certificate-provider-submission-completed
-version: 0.0.1
 summary: |
   The certificate provider has completed their LPA submission
 producers:
@@ -29,9 +28,3 @@ If there are anomalies in the data, Sirius waits until a case worker has resolve
 ## Effect
 
 MRLPA sends notifications to attorneys asking them to sign the LPA.
-
-
-
-
-
-

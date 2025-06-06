@@ -1,6 +1,5 @@
 ---
 name: identity-check-updated
-version: 0.0.1
 summary: |
   An offline identity check has been updated
 producers:
@@ -20,15 +19,15 @@ An offline identity check can be a distributed, asynchronous process. In order f
 In a happy path journey, an identity check may immediately go to `SUCCESS`. But it may also go through several steps to get there, as shown in the following example:
 
 1. EXIT
-    - The donor finds out they are not able to complete the check over the phone
+   - The donor finds out they are not able to complete the check over the phone
 1. COUNTER_SERVICE_STARTED
-    - The donor instead chooses to use counter service
+   - The donor instead chooses to use counter service
 1. FAILURE
-    - The counter service check fails
+   - The counter service check fails
 1. VOUCH_STARTED
-    - The donor instead elects someone to voucher for them
+   - The donor instead elects someone to voucher for them
 1. SUCCESS
-    - The voucher vouches for the donor's identity
+   - The voucher vouches for the donor's identity
 
 ## Trigger
 

@@ -1,6 +1,5 @@
 ---
 name: donor-submission-completed
-version: 0.0.1
 summary: |
   The donor has completed their LPA submission
 producers:
@@ -45,9 +44,3 @@ The donor's identity check may not be complete, and the Restrictions and Conditi
 ## Effect
 
 MRLPA sends a notification to the Certificate Provider asking them to sign the LPA.
-
-
-
-
-
-

@@ -1,6 +1,5 @@
 ---
 name: application-deleted
-version: 0.0.1
 summary: |
   The draft LPA application has been deleted
 producers:

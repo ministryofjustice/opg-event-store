@@ -1,6 +1,5 @@
 ---
 name: metric
-version: 0.0.1
 summary: |
   An event has occurred that increments a metric
 producers:

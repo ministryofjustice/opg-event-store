@@ -1,6 +1,5 @@
 ---
 name: application-updated
-version: 0.0.1
 summary: |
   The draft LPA application's details have changed
 producers:
@@ -25,9 +24,3 @@ When a donor creates an application in MRLPA, or later updates their personal de
 ## Effect
 
 Sirius uses the event to keep a copy of the donor's personal details as a Draft LPA. OPG staff can then search for the case in Sirius to provide support during the application process.
-
-
-
-
-
-

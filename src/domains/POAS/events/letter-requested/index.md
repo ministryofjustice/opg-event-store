@@ -1,6 +1,5 @@
 ---
 name: letter-requested
-version: 0.0.1
 summary: |
   A letter is requested to be sent
 producers:
@@ -28,9 +27,3 @@ conditions being met which vary depending on what letter and to which recipient.
 ## Details
 
 Send the specified letter to the correspondent given.
-
-
-
-
-
-

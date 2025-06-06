@@ -1,6 +1,5 @@
 ---
 name: attorney-started
-version: 0.0.1
 summary: |
   An attorney, replacement attorney, trust corporation or replacement trust corporation has been prompted to sign their declarations
 producers:

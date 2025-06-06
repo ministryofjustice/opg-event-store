@@ -1,6 +1,5 @@
 ---
 name: uid-requested
-version: 0.0.1
 summary: |
   A UID has been requested for the LPA
 producers:
@@ -29,9 +28,3 @@ The donor confirms which type of LPA they want.
 ## Details
 
 MRLPA asynchronously gets a UID via the UID service and attaches it to the LPA. It then emits a [application-updated](../application-updated) event.
-
-
-
-
-
-

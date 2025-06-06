@@ -1,6 +1,5 @@
 ---
 name: lpa-access-granted
-version: 0.0.1
 summary: |
   Actor granted access in Use An LPA
 producers:
@@ -24,9 +23,3 @@ Once the LPA has been registered
 ## Effect
 
 The event will allow UaL to create a record in order to associate the newly registered LPA with accounts we hold
-
-
-
-
-
-

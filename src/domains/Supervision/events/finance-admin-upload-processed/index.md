@@ -1,6 +1,5 @@
 ---
 name: finance-admin-upload-processed
-version: 0.0.1
 summary: |
   The payment report has been successfully processed
 producers:
@@ -9,8 +8,8 @@ consumers:
   - opg.supervision.finance.admin
 owners:
   - supervision
-domain: supervision 
-tags: events  
+domain: supervision
+tags: events
 ---
 
 ## Context
@@ -24,9 +23,3 @@ A payment report is processed.
 ## Effect
 
 An email is sent to the report's uploader describing its success, partial failure or full error, and the reason.
-
-
-
-
-
-

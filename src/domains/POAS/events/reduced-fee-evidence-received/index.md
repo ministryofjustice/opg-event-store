@@ -1,6 +1,5 @@
 ---
 name: reduced-fee-evidence-received
-version: 0.0.1
 summary: |
   The evidence uploaded to support a reduced fee request has arrived in Sirius
 producers:
@@ -33,9 +32,3 @@ A file has finished being copied into Sirius's reduced fee evidence bucket.
 ## Details
 
 Sirius finds the placeholder document for the evidence, adds the uploaded file contents, and sets its retrieved date.
-
-
-
-
-
-

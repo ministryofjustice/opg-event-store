@@ -25,7 +25,7 @@ eleventyComputed:
 {% for event in collections.events | owners(url) %}
   <div class="opg-event-block">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
-      <a href="{{ event.url }}" class="govuk-link">{{ event.data.name }} </a>  <strong class="govuk-tag govuk-tag--yellow" style="float:right">v{{ event.data.version }}</strong>
+      <a href="{{ event.url }}" class="govuk-link">{{ event.data.name }} </a>
     </h2>
     <p class="govuk-body-s">{{ event.data.summary }}</p>
     <p class="	govuk-body-s">

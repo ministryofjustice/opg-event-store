@@ -1,6 +1,5 @@
 ---
 name: identity-check-mismatched
-version: 0.0.1
 summary: |
   The identity check returned details that don't match what was entered.
 producers:
@@ -25,9 +24,3 @@ When the identity check returns data that does not match the expected data that 
 ## Effect
 
 Sirius provides this data to caseworkers so that they can manually check whether the change of data makes a material or immaterial difference.
-
-
-
-
-
-

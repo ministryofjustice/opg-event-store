@@ -1,6 +1,5 @@
 ---
 name: evidence-received
-version: 0.0.1
 summary: |
   The OPG has received paper evidence to support a donor's reduced fee application
 producers:
@@ -28,9 +27,3 @@ Sirius has ingested correspondence which it has identified<sup>[how?]</sup> as e
 ## Details
 
 The task list in MRLPA tells the user that their evidence has been received by the OPG.
-
-
-
-
-
-

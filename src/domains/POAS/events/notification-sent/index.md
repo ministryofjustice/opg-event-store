@@ -1,6 +1,5 @@
 ---
 name: notification-sent
-version: 0.0.1
 summary: |
   The notification has been sent by MRLPA to an actor on a LPA
 producers:
@@ -32,9 +31,3 @@ This does not mean it has successfully been delivered to the actor.
 Sirius downloads the notification information and content from GOV.UK Notify and saves a copy of it.
 
 The notification is visible in the Documents tab of Sirius.
-
-
-
-
-
-
