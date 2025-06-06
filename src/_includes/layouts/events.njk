@@ -1,0 +1,86 @@
+---
+layout: layouts/fullwidth.njk
+eleventyComputed:
+    title: "{{ name }}"
+---
+
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: site.name,
+      href: "/"
+    },
+    {
+      text: domain,
+      href: "/domains/"+domain
+    },
+    {
+      text: name,
+      href: "/"+domain+'/events/'+name
+    }
+  ]
+}) | safe }}
+<h1 class="govuk-heading-xl">{{ name }}
+  <strong class="govuk-tag govuk-tag--yellow">v{{ version }}</strong>
+</h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l ">Summary</h2>
+    {{ summary | markdownit | safe }}
+    {{ content | safe }} 
+     <h2 class="govuk-heading-l ">Examples </h2>
+    {% highlight "json" %}
+    {% include page.filePathStem | exampleFile  ignore missing %}
+    {% endhighlight %}
+     <h2 class="govuk-heading-l ">Schema </h2>
+     {% highlight "json" %}
+    {% include page.filePathStem | schemaFile  ignore missing %}
+    {% endhighlight %}
+
+<h2 class="govuk-heading-l ">Event Flow</h2>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.0/cytoscape.min.js" integrity="sha512-zHc90yHSbkgx0bvVpDK/nVgxANlE+yKN/jKy91tZ4P/vId8AL7HyjSpZqHmEujWDWNwxYXcfaLdYWjAULl35MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><div id="cy"></div>
+
+<script defer>
+  document.addEventListener("DOMContentLoaded",function(){
+      var graph = eventGraph()
+      var layout = graph.layout({name:'breadthfirst', grid:true})
+      addEventToGraph(graph, {{ producers | dump  | safe}}, "{{ name }}", {{ consumers | dump | safe }}, 100)
+        graph.zoom({
+        level: 0.8, // the zoom level
+        renderedPosition: { x: 600, y: 1000 }
+        });
+  })
+ 
+
+</script>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Producers</h2>
+    {% for producer in producers %}
+      <strong class="govuk-tag govuk-tag--yellow govuk-tag--nowrap govuk-!-margin-bottom-1">
+        <a href="/services/{{producer}}" class="opg-event-tag-link">{{ producer }}</a>
+        </strong>
+    {% endfor %}
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      Consumers
+    </h2>
+    {% for consumer in consumers %}
+      <strong class="govuk-tag govuk-tag--green govuk-tag--nowrap  govuk-!-margin-bottom-1">
+         <a href="/services/{{consumer}}" class="opg-event-tag-link">
+         {{ consumer }}
+         </a>
+         </strong>
+    {% endfor %}
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      Owners
+    </h2>
+    {% for owner in owners %}
+      <strong class="govuk-tag govuk-tag--blue govuk-tag--nowrap  govuk-!-margin-bottom-1">
+          <a href="/users/{{owner}}" class="opg-event-tag-link">
+            {{ owner }}
+            </a>
+      </strong>
+    {% endfor %}
+  </div>
+</div>

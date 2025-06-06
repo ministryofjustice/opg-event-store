@@ -1,0 +1,31 @@
+---
+layout: layouts/fullwidth.njk
+---
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: site.name,
+      href: "/"
+    },
+    {
+      text: "Domains",
+      href: "/domains"
+    }
+  ]
+}) | safe }}
+<h2 class="govuk-heading-l">Domains ({{ collections.domains | length }})</h2>
+{{ content| safe }}
+<div class="opg-event-wrapper">
+{% for domain in collections.domains %}
+  <div class="opg-event-block">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      <a href="{{ domain.url }}" class="govuk-link">{{ domain.data.name }} </a> 
+    </h2>
+    <p class="govuk-body-s">{{ domain.data.summary }}</p>
+    <p class="	govuk-body-s">
+     
+    </p>
+  </div>
+{% endfor %}
+</div>

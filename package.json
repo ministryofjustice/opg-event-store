@@ -2,27 +2,24 @@
   "name": "opg-event-store",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
-    "start": "eventcatalog start",
-    "dev": "eventcatalog dev",
-    "build": "eventcatalog build",
-    "generate": "eventcatalog generate",
+    "start": "npm run sass && npm run 11ty",
+    "build": "npm run sass && npx @11ty/eleventy",
+    "11ty": "npx @11ty/eleventy --serve",
+    "sass": "sass --style=compressed src/_scss/styles.scss src/_includes/css/styles.css",
     "test": "node test/validate-examples.mjs"
   },
-  "devDependencies": {
-    "@eventcatalog/types": "0.4.2",
-    "@types/node": "22.13.14",
-    "@types/react": "18.3.20",
-    "ajv": "^8.12.0",
-    "ajv-formats": "^3.0.0",
-    "autoprefixer": "10.4.21",
-    "cross-env": "^7.0.3",
-    "glob": "^11.0.0",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.4.3"
-  },
   "dependencies": {
-    "@eventcatalog/core": "^1.2.7"
+    "@11ty/eleventy": "^3.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "glob": "^11.0.1",
+    "govuk-frontend": "^5.9.0",
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-govuk": "^0.4.0",
+    "sass": "^1.86.0"
   }
 }

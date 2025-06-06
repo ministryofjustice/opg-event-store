@@ -1,0 +1,6 @@
+{
+    "name":"OPG Event Store",
+    "description": "Information on system events used between OPG Services",
+    "github": "opg-event-store",
+    "phase": "prototype"
+}

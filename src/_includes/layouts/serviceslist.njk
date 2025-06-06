@@ -1,0 +1,36 @@
+---
+layout: layouts/fullwidth.njk
+---
+{% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: site.name,
+      href: "/"
+    },
+    {
+      text: "Services"
+    }
+  ]
+}) | safe }}
+<h2 class="govuk-heading-l">Services ({{ collections.services | length }})</h2>
+{{ content| safe }}
+<div class="opg-event-wrapper">
+{% for service in collections.services %}
+  <div class="opg-event-block">
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+      <a href="{{ service.url }}" class="govuk-link">{{ service.data.name }} </a> 
+    </h2>
+    <p class="govuk-body-s">{{ service.data.summary }}</p>
+    <p class="	govuk-body-s">
+      <span class="opg-event-block__info">Subscribe Events:
+        {{ collections.events | consumers(service.data.name) | length }}
+      </span>
+      <span class="opg-event-block__info">
+       Publish Events:
+        {{ collections.events | producers(service.data.name) | length }}
+      </span>
+    </p>
+  </div>
+{% endfor %}
+</div>
