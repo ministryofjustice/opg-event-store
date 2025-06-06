@@ -16,5 +16,3 @@ tags: services
     <span class="govuk-visually-hidden">Warning</span>See <a href="/services/opg.poas.makeregister">opg.poas.makeregister</a> for events that are already implemented</storng></div>
 
 The following events are **proposed** have not yet been implemented by opg.poas.makeregister:
-
-<NodeGraph />

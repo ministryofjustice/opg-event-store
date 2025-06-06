@@ -11,5 +11,3 @@ tags: services
 ---
 
 > The Supervision Finance system is the financial case management system for invoices and payments relating to supervision orders. It is responsible for giving case managers and the cash control team a client-level view of invoices and payments received, as well as recording payment transactions, fee reductions and invoice adjustments.
-
-<NodeGraph />

@@ -11,4 +11,3 @@ tags: services
 ---
 
 The OPG Paper Identity is a client application for staff to perform and record ID checks.
-<NodeGraph />
