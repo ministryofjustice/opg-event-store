@@ -23,9 +23,3 @@ When the donor selects that they want to take their LPA to the Court of Protecti
 ## Effect
 
 Sirius can show this information on the case.
-
-<NodeGraph title="Consumer / Producer Diagram" />
-
-<EventExamples />
-
-<Schema />

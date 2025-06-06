@@ -11,4 +11,3 @@ tags: services
 ---
 
 The LPA Store holds all LPAs created through the modernising lasting power of attorneys process.
-<NodeGraph />

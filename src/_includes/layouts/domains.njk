@@ -1,5 +1,7 @@
 ---
 layout: layouts/fullwidth.njk
+eleventyComputed:
+    title: "{{ name }} - Domains"
 ---
 
 {% from "../../../node_modules/govuk-frontend//dist/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
@@ -19,11 +21,10 @@ layout: layouts/fullwidth.njk
 
   ]
 }) | safe }}
-<h1 class="govuk-heading-xl">{{ name | capitalize}}
+<h1 class="govuk-heading-xl">{{ summary }}
 </h1>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-l ">{{ summary }}</h2>
     {{ content | safe }}
     {% for events in collections.events | domain(name) %}
       <div class="opg-event-block">

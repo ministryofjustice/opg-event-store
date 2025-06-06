@@ -13,7 +13,7 @@ layout: layouts/fullwidth.njk
     }
   ]
 }) | safe }}
-<h2 class="govuk-heading-l">Events ({{ collections.events | length }})</h2>
+<h1 class="govuk-heading-l">Events ({{ collections.events | length }})</h1>
 {{ content| safe }}
 <div class="opg-event-wrapper">
 {% for events in collections.events %}
