@@ -6,13 +6,14 @@ summary: |
 producers:
   - opg.poas.makeregister
   - opg.poas.lpastore
+  - opg.poas.lpauid
 consumers:
   - opg.digital.metrics
 owners:
   - vega
   - mrlpa
 tags: events
-domain: POAS  
+domain: POAS
 ---
 
 ## Context
