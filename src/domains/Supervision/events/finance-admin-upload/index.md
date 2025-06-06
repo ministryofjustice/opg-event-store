@@ -1,6 +1,5 @@
 ---
 name: finance-admin-upload
-version: 0.0.1
 summary: |
   The payment report has been uploaded
 producers:
@@ -9,7 +8,7 @@ consumers:
   - opg.supervision.finance
 owners:
   - supervision
-domain: supervision   
+domain: supervision
 tags: events
 ---
 
@@ -24,9 +23,3 @@ A payment report is uploaded.
 ## Effect
 
 The finance hub API downloads the report from S3 and processes its payments.
-
-
-
-
-
-

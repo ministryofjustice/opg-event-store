@@ -1,6 +1,5 @@
 ---
 name: correspondent-updated
-version: 0.0.1
 summary: |
   The correspondent details for the LPA have been updated.
 producers:
@@ -28,9 +27,3 @@ When the donor:
 ## Effect
 
 Sirius provides this data to caseworkers so that they can correctly address correspondence.
-
-
-
-
-
-

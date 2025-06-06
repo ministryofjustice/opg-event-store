@@ -1,6 +1,5 @@
 ---
 name: identity-check-resolved
-version: 0.0.1
 summary: |
   An offline identity check has been resolved
 producers:
@@ -35,9 +34,3 @@ The identity check has been completed, so one of:
 If the outcome was successful, it is added to the LPA Store record. (If the LPA has not been executed, the information is held in Sirius until it is.)
 
 It the outcome was an exit, a note is added to the timeline stating the the ID check was incomplete.
-
-
-
-
-
-

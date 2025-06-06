@@ -1,6 +1,5 @@
 ---
 name: payment-method-changed
-version: 0.0.1
 summary: |
   The client's payment method have changed
 producers:
@@ -9,8 +8,8 @@ consumers:
   - opg.supervision.sirius
 owners:
   - supervision
-domain: supervision 
-tags: events  
+domain: supervision
+tags: events
 ---
 
 ## Context
@@ -25,9 +24,3 @@ The client's payment method is changed.
 ## Effect
 
 Sirius Supervision creates a timeline event.
-
-
-
-
-
-

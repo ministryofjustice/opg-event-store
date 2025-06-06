@@ -1,6 +1,5 @@
 ---
 name: immaterial-change-confirmed
-version: 0.0.1
 summary: |
   A change to LPA data after signing has been confirmed as immaterial in nature
 producers:
@@ -27,9 +26,3 @@ A caseworker has manually reviewed the changed data and identified it as an imma
 The data the change relates to will up updated in the LPA store.
 
 Depending on the state of the LPA, and the actor that made the change, this could complete a task in MRLPA (e.g. identity mismatched details) or send notifications to actors advising the change was accepted. The MRLPA progress tracker is updated to reflect the change was accepted.
-
-
-
-
-
-

@@ -1,6 +1,5 @@
 ---
 name: payment-received
-version: 0.0.1
 summary: |
   The payment has been successful in GOV.UK Pay
 producers:
@@ -23,9 +22,3 @@ This does not mean the payment has arrived in OPG's bank account.
 ## Effect
 
 Sirius fetches the payment details from GOV.UK Pay and stores a payment record in its database so the payment can be displayed in the UI.
-
-
-
-
-
-

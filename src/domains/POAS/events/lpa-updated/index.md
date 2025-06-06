@@ -1,6 +1,5 @@
 ---
 name: lpa-updated
-version: 0.0.1
 summary: |
   The LPA's details have changed
 producers:
@@ -34,9 +33,3 @@ Both Sirius and MRLPA make decisions of their effect based on what data is now i
 For Sirius this includes calculating progress indicators and detecting anomalies.
 
 For MRLPA this includes updating the task list.
-
-
-
-
-
-

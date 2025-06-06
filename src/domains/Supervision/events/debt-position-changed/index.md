@@ -1,6 +1,5 @@
 ---
 name: debt-position-changed
-version: 0.0.1
 summary: |
   The debt position for a client has changed
 producers:
@@ -9,7 +8,7 @@ consumers:
   - opg.supervision.finance
 owners:
   - supervision
-domain: supervision 
+domain: supervision
 tags: events
 ---
 
@@ -24,9 +23,3 @@ An invoice is created in Sirius.
 ## Effect
 
 Supervision Finance attempts to reapply any excess credit on account for the client whose debt position changed.
-
-
-
-
-
-

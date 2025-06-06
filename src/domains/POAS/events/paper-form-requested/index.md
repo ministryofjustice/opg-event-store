@@ -1,6 +1,5 @@
 ---
 name: paper-form-requested
-version: 0.0.1
 summary: |
   MRLPA has requested a paper form be sent to the certificate provider or an attorney
 producers:
@@ -28,9 +27,3 @@ For the attorney: either the certificate provider has just completed their secti
 ## Effect
 
 Sirius generates the form appropriate to the actor and sends it to them (either via GOV.UK Notify or Xerox). The `accessCode` provided in the event is included in the covering letter so that the actor can switch to the online channel.
-
-
-
-
-
-

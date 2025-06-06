@@ -1,6 +1,5 @@
 ---
 name: client-created
-version: 0.0.1
 summary: |
   A client has been created in Sirius
 producers:
@@ -9,7 +8,7 @@ consumers:
   - opg.supervision.finance
 owners:
   - supervision
-domain: supervision  
+domain: supervision
 tags: events
 ---
 
@@ -24,9 +23,3 @@ A client is created.
 ## Effect
 
 The supervision_finance.finance_client table is updated, setting the value of court_ref.
-
-
-
-
-
-

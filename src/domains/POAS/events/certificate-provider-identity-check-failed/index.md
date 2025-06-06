@@ -1,6 +1,5 @@
 ---
 name: certificate-provider-identity-check-failed
-version: 0.0.1
 summary: |
   A certificate provider acting on paper has failed to prove their identity
 producers:
@@ -25,9 +24,3 @@ The certificate provider has attempted, and failed, to prove their identity with
 ## Effect
 
 An email is sent to the donor advising them the certificate provider has failed their identity check, and they need to create a new LPA or register the LPA with the Court of Protection.
-
-
-
-
-
-

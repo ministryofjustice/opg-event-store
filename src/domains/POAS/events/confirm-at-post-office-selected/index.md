@@ -1,6 +1,5 @@
 ---
 name: confirm-at-post-office-selected
-version: 0.0.1
 summary: |
   The donor has selected that they will confirm their identity at a Post Office
 producers:
@@ -25,9 +24,3 @@ identity.
 
 A donor selects in Make and Register that they intend to confirm their identity
 at a Post Office.
-
-
-
-
-
-

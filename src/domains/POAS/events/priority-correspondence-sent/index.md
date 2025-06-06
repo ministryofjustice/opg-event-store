@@ -1,6 +1,5 @@
 ---
 name: priority-correspondence-sent
-version: 0.0.1
 summary: |
   An OPG user has sent a letter to the online donor to inform about a problem which needs attention.
 producers:
@@ -25,9 +24,3 @@ Sirius sends the event when the letter informing about the problem has been succ
 ## Effect
 
 The task list in MRLPA will inform the donor that a letter has been sent that needs attention.
-
-
-
-
-
-

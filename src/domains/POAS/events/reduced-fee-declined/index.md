@@ -1,6 +1,5 @@
 ---
 name: reduced-fee-declined
-version: 0.0.1
 summary: |
   An OPG user has declined the donor's application to pay a reduced fee
 producers:
@@ -27,9 +26,3 @@ A fee decision record with a "decline" outcome has been added in Sirius.
 ## Effect
 
 The task list in MRLPA shows the payment task as declined and asks the donor to pay the full fee to continue.
-
-
-
-
-
-
