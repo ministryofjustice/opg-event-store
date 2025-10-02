@@ -31,7 +31,7 @@ jobs:
         env:
           BASE_PATH: /opg-event-store
         run: |
-          npm install
+          npm ci --ignore-scripts
           npm run build
 
       - name: Setup Pages
