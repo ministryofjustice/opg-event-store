@@ -1,0 +1,15 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/invoice-created.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/invoice-created",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "integer",
+      "description": "The client's ID"
+    }
+  },
+  "required": [
+    "clientId"
+  ]
+}
