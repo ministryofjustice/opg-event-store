@@ -19,7 +19,7 @@
     "govuk-frontend": "^5.9.0",
     "markdown-it-abbr": "^2.0.0",
     "markdown-it-anchor": "^9.2.0",
-    "markdown-it-govuk": "^0.6.0",
+    "markdown-it-govuk": "^0.8.0",
     "sass": "^1.86.0"
   }
 }
