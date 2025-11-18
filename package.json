@@ -15,7 +15,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
-    "glob": "^11.0.1",
+    "glob": "^11.1.0",
     "govuk-frontend": "^5.9.0",
     "markdown-it-abbr": "^2.0.0",
     "markdown-it-anchor": "^9.2.0",
