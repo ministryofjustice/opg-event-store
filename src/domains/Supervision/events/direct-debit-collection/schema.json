@@ -1,0 +1,25 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/direct-debit-collection.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/direct-debit-collection",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "integer",
+      "description": "The client's ID"
+    },
+    "amount": {
+      "type": "integer",
+      "description": "The collection amount in pence"
+    },
+    "collectionDate": {
+      "type": "string",
+      "description": "The collection date in YYYY-MM-DDTHH:MM:SS format"
+    }
+  },
+  "required": [
+    "clientId",
+    "amount",
+    "collectionDate"
+  ]
+}
