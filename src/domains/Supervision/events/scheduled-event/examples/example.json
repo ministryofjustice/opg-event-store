@@ -1,0 +1,6 @@
+{
+  "trigger": "direct-debit-collection",
+  "override": {
+    "date": "2024-06-01"
+  }
+}

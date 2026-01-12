@@ -1,0 +1,15 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/direct-debit-mandate-review.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/direct-debit-mandate-review",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "integer",
+      "description": "The client's ID"
+    }
+  },
+  "required": [
+    "clientId"
+  ]
+}
