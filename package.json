@@ -16,7 +16,7 @@
     "ajv": "^8.18.0",
     "ajv-formats": "^3.0.1",
     "glob": "^13.0.0",
-    "govuk-frontend": "^5.9.0",
+    "govuk-frontend": "^6.0.0",
     "markdown-it-abbr": "^2.0.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-govuk": "^0.8.0",
