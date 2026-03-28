@@ -1,0 +1,25 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/client-made-inactive.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/client-made-inactive",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "integer",
+      "description": "The client's ID"
+    },
+    "courtRef": {
+      "type": "string",
+      "description": "The client's court reference number"
+    },
+    "surname": {
+      "type": "string",
+      "description": "The client's surname"
+    }
+  },
+  "required": [
+    "clientId",
+    "courtRef",
+    "surname"
+  ]
+}
