@@ -3,6 +3,7 @@
   "extends": [
     "config:base"
   ],
+  "configMigration": true,
   "branchNameStrict": true,
   "branchPrefix": "renovate-",
   "labels": [
@@ -11,6 +12,7 @@
   ],
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
+  "minimumReleaseAge": "7 days",
   "packageRules": [
     {
       "groupName": "Minor & Patch Updates",
@@ -22,7 +24,6 @@
         "minor",
         "patch"
       ],
-      "stabilityDays": 3,
       "schedule": ["on sunday"],
       "commitMessageSuffix": " #patch"
     }
