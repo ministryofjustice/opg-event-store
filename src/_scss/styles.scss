@@ -1,5 +1,6 @@
 $govuk-font-family: Helvetica, Arial, sans-serif;
-@import "../../node_modules/govuk-frontend/dist/govuk/all.scss";
+@import "node_modules/govuk-frontend/dist/govuk";
+@import "node_modules/@ministryofjustice/frontend/moj/all.scss";
 
 .govuk-tag--nowrap {
     max-width: none;
