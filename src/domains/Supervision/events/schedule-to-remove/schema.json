@@ -1,0 +1,30 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.finance/schedule-to-remove.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.finance/schedule-to-remove",
+  "type": "object",
+  "properties": {
+    "courtRef": {
+      "type": "string",
+      "description": "The client's court reference"
+    },
+    "surname": {
+      "type": "string",
+      "description": "The client's surname"
+    },
+    "amount": {
+      "type": "integer",
+      "description": "The amount scheduled"
+    },
+    "date": {
+      "type": "string",
+      "description": "The collection date"
+    }
+  },
+  "required": [
+    "courtRef",
+    "surname",
+    "amount",
+    "date"
+  ]
+}
