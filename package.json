@@ -4,9 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "npm run sass && npm run 11ty",
-    "build": "npm run sass && npx @11ty/eleventy",
-    "11ty": "npx @11ty/eleventy --serve",
+    "build": "npm run sass && eleventy",
+    "start": "npm run sass && eleventy --serve",
     "sass": "sass --load-path . --style=compressed src/_scss/styles.scss src/_includes/css/styles.css",
     "test": "node test/validate-examples.mjs"
   },
