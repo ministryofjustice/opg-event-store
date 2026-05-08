@@ -73,7 +73,7 @@ export default async function(eleventyConfig) {
         dir: {
           // The folder where all your content will live:
           input: 'src',
-          output: 'out',
+          output: '_site',
           data: '_data'
         }
       }

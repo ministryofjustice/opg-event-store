@@ -8,6 +8,7 @@
 # Generated files
 .next
 out
+_site
 
 # Misc
 .DS_Store

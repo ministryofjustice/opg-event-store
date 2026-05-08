@@ -1,0 +1,37 @@
+services:
+  builder:
+    container_name: node_build
+    volumes:
+      - ./src:/app/src
+      - ./_site:/app/_site
+      - ./.eleventy.js:/app/.eleventy.js
+
+    command: npm run build
+    build:
+      context: ./
+
+  server:
+    container_name: node_server
+    volumes:
+      - ./src:/app/src
+      - ./_site:/app/_site
+      - ./.eleventy.js:/app/.eleventy.js
+    ports:
+      - 8089:8080
+    command: npm run start
+    build:
+      context: ./
+  
+  test:
+    container_name: node_tester
+    volumes:
+      - ./src:/app/src
+      - ./test:/app/test
+      - ./_site:/app/_site
+      - ./.eleventy.js:/app/.eleventy.js
+    ports:
+      - 8089:8080
+    command: npm run test
+    build:
+      context: ./
+
