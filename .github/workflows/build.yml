@@ -18,6 +18,4 @@ jobs:
         run: docker compose up test
 
       - name: Check build possible
-        env:
-            BASE_PATH: /opg-event-store
-        run: docker compose up builder
+        run: docker compose run -e BASE_PATH=/opg-event-store builder
