@@ -7,14 +7,9 @@
     "clientId": {
       "type": "integer",
       "description": "The client's ID"
-    },
-    "reason": {
-      "type": "string",
-      "description": "The reason code returned for the failure"
     }
   },
   "required": [
-    "clientId",
-    "reason"
+    "clientId"
   ]
 }
