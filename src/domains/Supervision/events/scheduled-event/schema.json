@@ -1,0 +1,19 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/scheduled-event.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/scheduled-event",
+  "type": "object",
+  "properties": {
+    "trigger": {
+      "type": "string",
+      "description": "The scheduled event being triggered"
+    },
+    "override": {
+      "type": "object",
+      "description": "Any parameters to override the default scheduled event behaviour"
+    }
+  },
+  "required": [
+    "trigger"
+  ]
+}
