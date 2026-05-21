@@ -1,0 +1,30 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.supervision.sirius/client-created.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.supervision.sirius/client-updated",
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "integer",
+      "description": "The client's ID"
+    },
+    "surname": {
+      "type": "object",
+      "required": ["old", "new"],
+      "properties": {
+        "old": {
+          "type": "string",
+          "description": "The client's old surname"
+        },
+        "new": {
+          "type": "string",
+          "description": "The client's new surname"
+        }
+      }
+    }
+  },
+  "required": [
+    "clientId",
+    "surname"
+  ]
+}
