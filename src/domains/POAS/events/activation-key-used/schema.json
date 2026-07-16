@@ -1,0 +1,24 @@
+{
+  "$id": "https://opg.service.justice.gov.uk/opg.poas.use/activation-key-used.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "opg.poas.use/activation-key-used",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "The UID of the LPA",
+      "pattern": "^(7[0-9]{11}|M(-[0-9]{4}){3})$"
+    },
+    "actor": {
+      "type": "string",
+      "description": "The actor that used the activation key",
+      "pattern": "^(7[0-9]{11}|([a-z0-9]{8}-)([a-z0-9]{4}-){3}([a-z0-9]{12}))$"
+    },
+    "usedAt": {
+      "type": "string",
+      "description": "When the activation key was used",
+      "format": "date-time"
+    }
+  },
+  "required": ["uid", "actor", "usedAt"]
+}
